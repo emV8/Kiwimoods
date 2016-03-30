@@ -41,12 +41,13 @@
 	function inscription(){
 		$identifiant = $_POST['logInscription'];
 		$mdp = $_POST['passwordInscription'];
+		$mail = $_POST['mail'];
 		$requete = "SELECT * FROM user WHERE login = '".$identifiant."'";
 		$res = mysql_query($requete);
 		$row = mysql_fetch_row($res);
 		if (!$row[0]){
 			$mdpcode = md5($mdp);
-			$requete2 = 'INSERT INTO user (login, mdp) VALUES("'.$identifiant.'","' .$mdpcode.'")';
+			$requete2 = 'INSERT INTO user (login, mdp, mail) VALUES("'.$identifiant.'","' .$mdpcode.'", "' .$mail.'")';
 			$res2 = mysql_query($requete2);
 			if ($res2){
 				echo "inscription ok";
