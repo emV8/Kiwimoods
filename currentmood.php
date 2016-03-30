@@ -8,7 +8,9 @@ $connexion = mysql_connect("localhost", "root");
 	mysql_query("SET NAMES 'utf8'");
 
 	if(!empty($_POST['mood'])){
-
+		if ($_POST['mood']=="autre"){
+			echo "autre";
+		}
 	$requete = 'INSERT INTO currentmood (user_id, mood_name) VALUES("'.$_SESSION['userid'].'","' .$_POST['mood'].'")';
 	$res = mysql_query($requete);
 }else{
