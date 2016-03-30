@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	  <meta charset="utf-8" />
+	  <link rel="stylesheet" href="css.css" />
+	  <script src="script.js"></script>
+</head>
+
+<body>
+	<header>
+		<div id = "connection">
+			<form action = "users.php" method = "post">
+				<div id = "logConn">
+					<label for = "loginConn"> Identifiant </label> </br> <input type="text" name="loginConn"/>
+				</div>
+				<div id = "mdpConn">
+					<label for = "passwordConn"> Mot de passe </label> </br> <input type="password" name="passwordConn">
+				</div>
+				<button type="submit" class="button" id = "connection_button">Se connecter</button>
+			</form>
+		</div>
+	</header>
+	<div id = "welcome">
+		<b> Bienvenue sur Kiwi Moods, notre site de test ! </b><br/>
+		<br/>
+		Il nous permettra par la suite de générer des playlists selon vos humeurs <br/> 
+		et contextes d'écoute. <br/>
+		Nous vous demanderons votre humeur actuelle, le contexte dans lequel vous <br/> 
+		vous trouvez et les émotions ressenties par l'écoute de chacun des titres. <br/>
+		<br/>
+		Merci :-)
+	</div>
+	<div id = "inscription"> 
+		<form action = "users.php" method = "post">
+			<label for = "logInscription"> Identifiant </label> </br> <input type = "text" name = "logInscription"/> <br/>
+			<label for = "passwordInscription"> Mot de passe </label> </br> <input type = "password" name = "passwordInscription"/> <br/>
+		</br>
+		<input type = "submit" name = "inscription" value = "S'inscrire" class="button" id = "inscription_button"/>
+	</form>
+</div>
+</body>
+</html>
