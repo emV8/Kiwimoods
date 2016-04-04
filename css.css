@@ -18,17 +18,11 @@ label{
 	display: block;
 	float: left;
 	color: white;
-	width: 70%;
+	width: 80%;
 	position: relative;
 	font-weight: bold;
 	
 }
-
-input[type="radio"]{
-	position: absolute;
-	left: 5%;
-}
-
 
 
 #connection{
@@ -69,14 +63,14 @@ input[type="radio"]{
 
 #inscription{
 	position: absolute;
-	top:38%;
-	right:20%;
+	top:30%;
+	right:15%;
 }
 
 #inscription_button{
 	position: relative;
 	top : 35%;
-	left: 28%;
+	left: 15%;
 }
 
 
@@ -88,6 +82,10 @@ input[type="radio"]{
 	left: 10%;
 }
 
+.radiomood{
+	position: absolute;
+	left: 4%;
+}
 
 #currentMood{
 	font-size: 18px;
@@ -151,3 +149,31 @@ input[type="radio"]{
 	top: 88%;
 	left: 50%;
 }
+
+td{
+	width: 5%;
+	text-align: center;
+}
+
+tr{
+	height: 5%;
+}
+
+.question{
+	position: absolute;
+	top: 30%;
+	left: 3%;
+}
+
+.smallquestion{
+	position: absolute;
+	top: 30%;
+	left: 20%;
+}
+
+.suivant{
+	position: absolute;
+	right: 10%;
+}
+
+

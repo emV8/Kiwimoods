@@ -20,7 +20,6 @@
 		
 		$row = mysql_fetch_row($res);
 		if ($row[0]){
-			//echo "<script type='text/javascript'>document.location.replace('index.php');</script>";
 			echo "Vous êtes connecté, '".$identifiant."'";
 			$requete3 = "SELECT user_id FROM user WHERE login = '".$identifiant."'";
 			$res = mysql_query($requete3);
@@ -31,8 +30,6 @@
 			header('Location: mood.php');    
 
 		}else{
-			//require 'connexion.php';
-			//echo "<script type='text/javascript'>document.getElementById('idfaux').innerHTML = 'Identifiant incorrect';</script>";
 			echo "Oups";
 		}
 	}
