@@ -8,10 +8,10 @@ $userid = $_SESSION['userid'];
 
 
 if(!empty($_POST['mood'])){
-		foreach($_POST['mood'] as $selected){
-			$mood = $selected;
-			if ($selected=="autre"){
+			$mood = $_POST['mood'];
+			if ($mood=="autre"){
 				if (empty($_POST['otherMood']) && $_POST['otherMood']==""){
+					require("mood.php");
 					echo "<script> alert('Merci de remplir le champ \'Autre\'') </script>";
 					echo "<script> location.href = history.back(-1) </script>";
 				}else{
@@ -20,16 +20,17 @@ if(!empty($_POST['mood'])){
 					$mood.= $othermood;
 					$requete = 'INSERT INTO listenmood (mood_name, user_id) VALUES("'.$mood.'","' .$userid.'")';
 					$res = mysql_query($requete);
-					header("Location : form1.php");
+					header("Location: form1.php");
+					exit;
 				}
 			}else{
 				$requete = 'INSERT INTO listenmood (mood_name, user_id) VALUES("'.$mood.'","' .$userid.'")';
 				$res = mysql_query($requete);
-				header("Location : form1.php");
+				header("Location: form1.php");
+				exit;
 			}
-		}
 }else{
-	require("form2.php");
+		require("mood.php");
 		echo "<script> alert('Merci de sélectionner une humeur') </script>";
 		echo "<script> location.href = history.back(-1) </script>";
 }
