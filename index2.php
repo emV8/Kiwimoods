@@ -55,10 +55,8 @@ include 'Htm5Playlist/PlayList.php';
         //*******************************
         //on renseigne deux Arrays, un pour les chemins vers les musiques à lire, 
         //un deuxième pour les titres.
-        $chemin[0] = "https://www.youtube.com/watch?v=jiwuQ6UHMQg";
-        $titre[0] = "VON ZIEGLER";
-        $chemin[1] = "http://dariumis.fr/lesMp3/1384648517_5125.mp3";
-        $titre[1] = "Zindispensable";
+        $chemin[0] = "https://share.orange.fr/#hmUYua9fOe4c0e3f3be";
+        $titre[0] = "TEST";
         //on place simplement la playliste généré par les Arrays grâce à 
         //la fonction getArray($id, $chemin, $titre) , dans une 
         //variable tampon. Les paramètres de cette fonction sont dans l'ordre:
@@ -70,5 +68,6 @@ include 'Htm5Playlist/PlayList.php';
         echo $tamp;
         ?>
        
+       <iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=playlist&id=1699259131&app_id=1" width="700" height="240"></iframe>
 </body>
 </html>
