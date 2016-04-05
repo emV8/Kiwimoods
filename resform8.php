@@ -8,7 +8,7 @@
 	$userid = $_SESSION['userid'];
 	
 	if(isset($_POST['goutplaylist']) && $_POST['goutplaylist']!=""){
-		$requete = 'INSERT INTO likeplaylist (user_id, mood_name) VALUES("'.$_SESSION['userid'].'","' .$goutplaylist.'")';
+		$requete = 'INSERT INTO likeplaylist (user_id, mood_name /*, playlist_id */) VALUES("'.$_SESSION['userid'].'","' .$goutplaylist.'")';
 		$res = mysql_query($requete);
 		$goutplaylist = $_POST['goutplaylist'];
 		header("Location:form9.php");

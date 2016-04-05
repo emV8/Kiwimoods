@@ -18,12 +18,12 @@ if(!empty($_POST['namemoodplaylist'])){
 					$mood.= " : ";
 					$othermood = $_POST['othermoodplaylist'];
 					$mood.= $othermood;
-					$requete = 'INSERT INTO namemoodplaylist (mood_name, user_id) VALUES("'.$mood.'","' .$userid.'")';
+					$requete = 'INSERT INTO namemoodplaylist (mood_name, user_id /*, playlist_id */) VALUES("'.$mood.'","' .$userid.'")';
 					$res = mysql_query($requete);
 					//header("Location:form8.php");
 				}
 			}else{
-				$requete = 'INSERT INTO namemoodplaylist (mood_name, user_id) VALUES("'.$mood.'","' .$userid.'")';
+				$requete = 'INSERT INTO namemoodplaylist (mood_name, user_id /*, playlist_id */) VALUES("'.$mood.'","' .$userid.'")';
 				$res = mysql_query($requete);
 				//header("Location:form8.php");
 			}
