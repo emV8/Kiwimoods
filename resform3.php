@@ -57,7 +57,7 @@
 		echo "<script> alert('Merci de sélectionner un choix pour le titre 5') </script>";
 		echo "<script> location.href = history.back(-1) </script>";
 	}
-	if (isset($_POST['gouttitre6']) && $_POST['gouttitre']!=""){
+	if (isset($_POST['gouttitre6']) && $_POST['gouttitre6']!=""){
 		$requete = 'INSERT INTO likemusic (likesong, user_id /*, music_id */) VALUES("'.$_POST['gouttitre6'].'","' .$userid.'")';
 		$res = mysql_query($requete);
 		$ok6 = true;
