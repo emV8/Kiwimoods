@@ -59,7 +59,7 @@
 				session_start();
 				$_SESSION['login'] = $identifiant;
 				$_SESSION['userid'] = $userid;
-				header('Location: mood.php');    
+				header('Location: tuto.php');    
 			}else{
 				require("index.html");
 				echo "<script> alert('Une erreur est survenue, merci de recommencer.') </script>";

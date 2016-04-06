@@ -82,6 +82,13 @@ label{
 	left: 10%;
 }
 
+#tuto{
+	position: absolute;
+	top: 17%;
+	left: 10%;
+	font-size: 22px;
+}
+
 .radiomood{
 	position: absolute;
 	left: 4%;
