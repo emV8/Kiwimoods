@@ -1,5 +1,3 @@
-
-<script src="script.js"></script>
 <?php
 
 $connexion = mysql_connect("localhost", "root");
@@ -10,13 +8,6 @@ $userid = $_SESSION['userid'];
 
 
 if(!empty($_POST['mood'])){
-    ?>
-    <SCRIPT language="javascript">
-   function ouvre_popup(page) {
-       window.open('form.php',"PLAYLIST","menubar=no, status=no, scrollbars=no, menubar=no, width=200, height=100");
-   }
-    </SCRIPT>
-    <?php
 			$mood = $_POST['mood'];
 			if ($mood=="autre"){
 				if (empty($_POST['otherMood']) && $_POST['otherMood']==""){
@@ -35,7 +26,7 @@ if(!empty($_POST['mood'])){
 			}else{
 				$requete = 'INSERT INTO listenmood (mood_name, user_id) VALUES("'.$mood.'","' .$userid.'")';
 				$res = mysql_query($requete);
-				header("Location: form.php");
+				header("Location: form1.php");
 				exit;
 			}
 }else{

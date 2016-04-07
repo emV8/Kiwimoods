@@ -39,26 +39,35 @@ include 'Htm5Playlist/PlayList.php';
          * vers la racine du dossier Htm5Playlist/, prenez garde à renseigner le chemin 
           exacte */
         $playList = new PlayList("Htm5Playlist/");
- 
- 
- 
+
         //*******************************
-        // version 2: par des Array!
+        // varsion 1: depuis le dossier musique!
+        //*******************************
+        //on place simplement la playliste généré par le dossier "musique" grâce à 
+        //la fonction getDossierMusique($id); , dans une 
+        //variable tampon, on place simplement l'id de votre choix en paramètre.
+        $tamp = $playList->getDossierMusique("playListDossier");
+        //on écrit la playlist.
+        echo $tamp;
+
+        //*******************************
+        // varsion 2: par des Array!
         //*******************************
         //on renseigne deux Arrays, un pour les chemins vers les musiques à lire, 
         //un deuxième pour les titres.
-        $chemin[0] = "http://dariumis.fr/lesMp3/1412862486_4166.mp3";
-        $titre[0] = "titre 1";
-        $chemin[1] = "http://dariumis.fr/lesMp3/1411336191_6685.mp3";
-        $titre[1] = "titre 2";
+        $chemin[0] = "https://share.orange.fr/#hmUYua9fOe4c0e3f3be";
+        $titre[0] = "TEST";
         //on place simplement la playliste généré par les Arrays grâce à 
-        //la fonction getArray($id, $chemin, $titre).
-        // Les paramètres de cette fonction sont dans l'ordre:
+        //la fonction getArray($id, $chemin, $titre) , dans une 
+        //variable tampon. Les paramètres de cette fonction sont dans l'ordre:
         //---- l'id de votre playlist
         //---- l'Array contenant les chemins
         //---- l'Array contenant les titres
-        echo $playList->getArray("depuisArray", $chemin, $titre);
+        $tamp=$playList->getArray("depuisArray", $chemin, $titre);
+        //on écrit la playlist.
+        echo $tamp;
         ?>
        
+       <iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=playlist&id=1699259131&app_id=1" width="700" height="240"></iframe>
 </body>
 </html>

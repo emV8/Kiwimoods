@@ -55,16 +55,6 @@ label{
 	border-radius: 3px
 }
 
-a.button {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-    align : center;
-    text-decoration: none;
-    color: initial;
-    border: 1px solid #900;
-}
-
 #welcome{
 	position: absolute;
 	top:35%;
@@ -180,7 +170,6 @@ tr{
 	position: absolute;
 	top: 30%;
 	left: 3%;
-    
 }
 
 .smallquestion{
@@ -194,6 +183,7 @@ tr{
 	right: 10%;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .player_cls{
                 margin: auto;
@@ -220,3 +210,6 @@ tr{
 }
 
 >>>>>>> origin/master
+=======
+
+>>>>>>> parent of 8f33bc7... ajoute rappels playlists
