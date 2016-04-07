@@ -19,12 +19,14 @@
 	</div>
 </header>
 
+	<div id = "player">
       <?php
         include 'player.php';
         genplaylist();
       ?>
+  </div>
 
-       <a href="form1.php" class="button">Etape suivante</a>
+       <input type = "button" id="player_button" value = "Répondre au questionnaire" onclick = "self.location.href = 'form1.php'"/>
         
         <script src="jquery.js"></script>
         <script src="script.js"></script> 

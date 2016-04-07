@@ -20,6 +20,9 @@ include 'Htm5Playlist/PlayList.php';
                 border: outset 2px gray;
                 box-shadow: 3px 3px 10px black;
                 width: 25%!important;
+                position: absolute;
+                top: 10%;
+                left: 40%;
             }
         </style>
 
