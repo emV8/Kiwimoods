@@ -55,6 +55,16 @@ label{
 	border-radius: 3px
 }
 
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    align : center;
+    text-decoration: none;
+    color: initial;
+    border: 1px solid #900;
+}
+
 #welcome{
 	position: absolute;
 	top:35%;
@@ -163,6 +173,7 @@ tr{
 	position: absolute;
 	top: 30%;
 	left: 3%;
+    
 }
 
 .smallquestion{
@@ -176,4 +187,12 @@ tr{
 	right: 10%;
 }
 
-
+.player_cls{
+                margin: auto;
+                margin-top: 50px;
+                border-radius: 15px;
+                background: rgb(90%,90%,90%);
+                border: outset 2px gray;
+                box-shadow: 3px 3px 10px black;
+                width: 25%!important;
+            }

@@ -19,6 +19,8 @@
 </header>
 
 		<div class = "question">
+
+       
 			<form action="resform1.php" method="post">
 			<b> 1. Pour chacun des titres écoutés, quelle(s) émotion(s) avez-vous ressentie(s) ? </b><br/>
 			<br/>
@@ -131,9 +133,12 @@
 			<br/>
 			<input class = "suivant" type="submit" value="Suivant >" />
 			</form>
+             <?php
+                include 'player.php';
+                genplaylist();
+            ?>
+        
 		</div>
-		<div> 
-		</div>
-
-</body>
+        
+	</body>
 </html>

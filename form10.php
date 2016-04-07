@@ -34,6 +34,9 @@
 			<input class = "suivant" type="submit" value="Suivant >" />
 			</form>
 		</div>
-
+     <?php
+            include 'player.php';
+            genplaylist();
+        ?>
 </body>
 </html>

@@ -6,6 +6,10 @@
 	session_start();
 	$userid = $_SESSION['userid'];
 
+    
+/*echo '<pre>'; var_dump($_POST); echo '</pre>';
+die;*/
+
 if(!empty($_POST['etitre1'])){
 	 $ok1 = false;
 		foreach($_POST['etitre1'] as $selected){
@@ -175,9 +179,15 @@ if(!empty($_POST['etitre6'])){
 		echo "<script> location.href = history.back(-1) </script>";
 }
 
+/*if ($ok1 && $ok2 && $ok3 && $ok4 && $ok5 && $ok6){
+    echo 1;
+} 
+else {
+ echo 0;
+}*/
+
 if ($ok1 && $ok2 && $ok3 && $ok4 && $ok5 && $ok6){
 	header("Location:form2.php");
 }
-
 
 ?>
