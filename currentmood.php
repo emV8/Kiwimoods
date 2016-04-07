@@ -20,13 +20,13 @@ if(!empty($_POST['mood'])){
 					$mood.= $othermood;
 					$requete = 'INSERT INTO listenmood (mood_name, user_id) VALUES("'.$mood.'","' .$userid.'")';
 					$res = mysql_query($requete);
-					header("Location: form1.php");
+					header("Location: form.php");
 					exit;
 				}
 			}else{
 				$requete = 'INSERT INTO listenmood (mood_name, user_id) VALUES("'.$mood.'","' .$userid.'")';
 				$res = mysql_query($requete);
-				header("Location: form1.php");
+				header("Location: form.php");
 				exit;
 			}
 }else{

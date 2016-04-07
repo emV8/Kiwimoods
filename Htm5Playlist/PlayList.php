@@ -7,7 +7,7 @@
  * façons differentes soit en plaçant vos musiques dans le dossier "musique" du dossier
  * "Htm5Playlist", soit en renseignants deux Array, un contenant les liens vers vos fichiers
  * un autre les titre de vos chansons. */
-session_start();
+//session_start();
 include 'vu/Player.php';
 include 'vu/List_play.php';
 include 'traitement/DossierList.php';

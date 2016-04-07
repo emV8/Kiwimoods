@@ -33,6 +33,10 @@
 		       <input type="checkbox" name="namemoodplaylist" value="autre" /> Autre : <input type = "text" name = "othermoodplaylist" id = "autre" placeholder = "Autre humeur" style="text-align:center"/> <br/>
 			<input class = "suivant" type="submit" value="Suivant >" />
 			</form>
+            <?php
+        include 'player.php';
+        genplaylist();
+      ?>
 		</div>
 
 </body>

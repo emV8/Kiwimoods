@@ -131,6 +131,10 @@
 			<br/>
 			<input class = "suivant" type="submit" value="Suivant >" />
 			</form>
+            <?php
+        include 'player.php';
+        genplaylist();
+      ?>
 		</div>
 		<div> 
 		</div>

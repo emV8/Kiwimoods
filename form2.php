@@ -168,6 +168,10 @@
 			<br/>
 			<input class = "suivant" type="submit" id="contextbutton" value="Suivant >" />
 			</form>
+            <?php
+        include 'player.php';
+        genplaylist();
+      ?>
 		</div>
 
 </body>
