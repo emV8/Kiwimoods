@@ -92,6 +92,13 @@ a.button {
 	left: 10%;
 }
 
+#tuto{
+	position: absolute;
+	top: 17%;
+	left: 10%;
+	font-size: 22px;
+}
+
 .radiomood{
 	position: absolute;
 	left: 4%;
@@ -187,6 +194,7 @@ tr{
 	right: 10%;
 }
 
+<<<<<<< HEAD
 .player_cls{
                 margin: auto;
                 margin-top: 50px;
@@ -196,3 +204,19 @@ tr{
                 box-shadow: 3px 3px 10px black;
                 width: 25%!important;
             }
+=======
+#end{
+	position: absolute;
+	top: 25%;
+	left: 10%;
+	text-align: center;
+	font-size: 28px;
+}
+
+#suggestion{
+	position: absolute;
+	top: 50%;
+	left: 35%;
+}
+
+>>>>>>> origin/master

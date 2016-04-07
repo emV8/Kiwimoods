@@ -18,12 +18,12 @@ if(!empty($_POST['possiblecontextplaylist'])){
 					$context.= " : ";
 					$othercontext = $_POST['autrec'];
 					$context.= $othercontext;
-					$requete = 'INSERT INTO possiblecontextplaylist (context_name, user_id) VALUES("'.$context.'","' .$userid.'")';
+					$requete = 'INSERT INTO possiblecontextplaylist (context_name, user_id /*, playlist_id */) VALUES("'.$context.'","' .$userid.'")';
 					$res = mysql_query($requete);
 					header("Location:form10.php")
 				}
 			}else{
-				$requete = 'INSERT INTO possiblecontextplaylist (context_name, user_id) VALUES("'.$context.'","' .$userid.'")';
+				$requete = 'INSERT INTO possiblecontextplaylist (context_name, user_id /*, playlist_id */) VALUES("'.$context.'","' .$userid.'")';
 				$res = mysql_query($requete);
 				header("Location:form10.php")
 			}

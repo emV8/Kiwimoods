@@ -30,7 +30,9 @@
 			header('Location: mood.php');    
 
 		}else{
-			echo "Oups";
+			require("index.html");
+			echo "<script> alert('La connexion a échoué, merci de vous inscrire.') </script>";
+			echo "<script> location.href = history.back(-1) </script>";
 		}
 	}
 
@@ -38,7 +40,11 @@
 	function inscription(){
 		$identifiant = $_POST['logInscription'];
 		$mdp = $_POST['passwordInscription'];
-		$mail = $_POST['mail'];
+		if (!empty($_POST['mail'])){
+			$mail = $_POST['mail'];
+		}else{
+			$mail = "";
+		}
 		$requete = "SELECT * FROM user WHERE login = '".$identifiant."'";
 		$res = mysql_query($requete);
 		$row = mysql_fetch_row($res);
@@ -47,19 +53,22 @@
 			$requete2 = 'INSERT INTO user (login, mdp, mail) VALUES("'.$identifiant.'","' .$mdpcode.'", "' .$mail.'")';
 			$res2 = mysql_query($requete2);
 			if ($res2){
-				echo "inscription ok";
 				$requete3 = "SELECT user_id FROM user WHERE login = '".$identifiant."'";
 				$res = mysql_query($requete3);
 				$userid = mysql_fetch_row($res)[0];
 				session_start();
 				$_SESSION['login'] = $identifiant;
 				$_SESSION['userid'] = $userid;
-				 header('Location: mood.php');    
+				header('Location: tuto.php');    
 			}else{
-				echo "oups inscription";
+				require("index.html");
+				echo "<script> alert('Une erreur est survenue, merci de recommencer.') </script>";
+				echo "<script> location.href = history.back(-1) </script>";
 			}
 		}else{
-			echo "déjà inscrit";
+			require("index.html");
+			echo "<script> alert('Ce login est déjà utilisé') </script>";
+			echo "<script> location.href = history.back(-1) </script>";
 		}
 	}
 
