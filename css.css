@@ -183,4 +183,17 @@ tr{
 	right: 10%;
 }
 
+#end{
+	position: absolute;
+	top: 25%;
+	left: 10%;
+	text-align: center;
+	font-size: 28px;
+}
+
+#suggestion{
+	position: absolute;
+	top: 50%;
+	left: 35%;
+}
 

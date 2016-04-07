@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Lun 04 Avril 2016 à 18:39
+-- Généré le :  Jeu 07 Avril 2016 à 14:01
 -- Version du serveur :  5.6.15-log
 -- Version de PHP :  5.4.24
 
@@ -32,13 +32,6 @@ CREATE TABLE IF NOT EXISTS `currentmood` (
   PRIMARY KEY (`user_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
---
--- Contenu de la table `currentmood`
---
-
-INSERT INTO `currentmood` (`user_id`, `mood_name`) VALUES
-(3, 'excitation');
-
 -- --------------------------------------------------------
 
 --
@@ -52,16 +45,6 @@ CREATE TABLE IF NOT EXISTS `emotion` (
   `music_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
-
---
--- Contenu de la table `emotion`
---
-
-INSERT INTO `emotion` (`id`, `emotion_name`, `user_id`, `music_id`) VALUES
-(16, 'autre : test', 3, 0),
-(15, 'autre', 3, 0),
-(14, 'ennui', 3, 0),
-(13, 'excitation', 3, 0);
 
 -- --------------------------------------------------------
 
@@ -205,6 +188,19 @@ CREATE TABLE IF NOT EXISTS `possiblecontextplaylist` (
 -- --------------------------------------------------------
 
 --
+-- Structure de la table `suggestion`
+--
+
+CREATE TABLE IF NOT EXISTS `suggestion` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `suggestion_message` text NOT NULL,
+  `user_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `user`
 --
 
@@ -214,7 +210,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `mdp` text NOT NULL,
   `mail` text NOT NULL,
   PRIMARY KEY (`user_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
 
 --
 -- Contenu de la table `user`
