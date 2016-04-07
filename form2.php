@@ -19,6 +19,12 @@
 	</div>
 </header>
 
+<div>
+			<?php
+        include 'player.php';
+        genplaylist();
+      ?>
+
 		<div class = "question">
 			<form action = "resform2.php"  method="post">
 			<b> 2. Dans le cadre de cette expérience, dans quel(s) contexte(s) avez-vous écouté chacun de ces titres ? </b><br/>
@@ -168,10 +174,6 @@
 			<br/>
 			<input class = "suivant" type="submit" id="contextbutton" value="Suivant >" />
 			</form>
-            <?php
-        include 'player.php';
-        genplaylist();
-      ?>
 		</div>
 
 </body>

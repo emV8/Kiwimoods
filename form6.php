@@ -16,6 +16,11 @@
 	</div>
 </header>
 
+<div>
+			<?php
+        include 'player.php';
+        genplaylist();
+      ?>
 		<div class = "smallquestion">
 			<form action="resform6.php" method="post">
 			<b> 7. Avant d'écouter cette playlist, vous avez choisi '
@@ -37,10 +42,6 @@
 		       <input type="radio" name="moodplaylist" value="non" />Non <br/>
 			<input class = "suivant" type="submit" value="Suivant >" />
 			</form>
-            <?php
-        include 'player.php';
-        genplaylist();
-      ?>
 		</div>
 
 </body>

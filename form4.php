@@ -11,6 +11,12 @@
 
 </header>
 
+<div>
+			<?php
+        include 'player.php';
+        genplaylist();
+      ?>
+
 		<div class = "question">
 			<form action="resform4.php" method="post">
 			<b> 4. Indépendamment de cette étude, dans quel(s) contexte(s) pourriez-vous réécouter ces titres ? </b><br/>
@@ -169,10 +175,6 @@
 			<br/>
 			<input class = "suivant" type="submit" value="Suivant >" />
 			</form>
-            <?php
-        include 'player.php';
-        genplaylist();
-      ?>
 		</div>
 		<div> 
 		</div>

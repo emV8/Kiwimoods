@@ -18,6 +18,11 @@
 	</div>
 </header>
 
+<div>
+			<?php
+        include 'player.php';
+        genplaylist();
+      ?>
 		<div class = "question">
 			<form action="resform5.php" method="post">
 			<b> 5. Connaissiez-vous chacun de ces titres avant cette écoute ? </b><br/>
@@ -93,10 +98,6 @@
 			<br/>
 			<input class = "suivant" type="submit" value="Suivant >" />
 			</form>
-            <?php
-        include 'player.php';
-        genplaylist();
-      ?>
 		</div>
 
 </body>

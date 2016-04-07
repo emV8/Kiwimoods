@@ -18,6 +18,12 @@
 	</div>
 </header>
 
+<div>
+			<?php
+        include 'player.php';
+        genplaylist();
+      ?>
+
 		<div class = "smallquestion">
 			<form action="resform10.php" method="post">
 			<b> 11. A quelle(s) humeur(s) associeriez-vous cette playlist ? </b><br/>
@@ -33,10 +39,6 @@
 		       <input type="checkbox" name="namemoodplaylist" value="autre" /> Autre : <input type = "text" name = "othermoodplaylist" id = "autre" placeholder = "Autre humeur" style="text-align:center"/> <br/>
 			<input class = "suivant" type="submit" value="Suivant >" />
 			</form>
-            <?php
-        include 'player.php';
-        genplaylist();
-      ?>
 		</div>
 
 </body>

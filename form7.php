@@ -17,7 +17,11 @@
 	?>
 	</div>
 </header>
-
+<div>
+			<?php
+        include 'player.php';
+        genplaylist();
+      ?>
 		<div class = "smallquestion">
 			<form action="resform7.php" method="post">
 			<b> 8. Si oui, vers quelle humeur a-t-elle changé ? </b><br/>
@@ -34,10 +38,6 @@
 		       <input type = "text" name = "othermoodplaylist" id = "autre" placeholder = "Autre humeur" style="text-align:center"/> <br/>
 			<input class = "suivant" type="submit" value="Suivant >" />
 			</form>
-            <?php
-        include 'player.php';
-        genplaylist();
-      ?>
 		</div>
 
 </body>
