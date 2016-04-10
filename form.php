@@ -26,7 +26,7 @@
       ?>
   </div>
 
-       <input type = "button" id="player_button" value = "Répondre au questionnaire" onclick = "self.location.href = 'form1.php'"/>
+       <input type = "button" id="player_button" value = "Répondre au questionnaire" onclick = "self.location.href = 'form/form1.php'"/>
         
         <script src="jquery.js"></script>
         <script src="script.js"></script> 

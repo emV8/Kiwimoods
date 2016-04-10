@@ -15,32 +15,30 @@ session_start();
 $userid = $_SESSION['userid'];
 
 
-if(!empty($_POST['mood'])){
+if(!empty($_POST['namemoodplaylist'])){
 	global $dbprefix;
-	$mood = $_POST['mood'];
+	$mood = $_POST['namemoodplaylist'];
 	if ($mood=="autre"){
-		if (empty($_POST['otherMood']) && $_POST['otherMood']==""){
-			require("mood.php");
+		if (empty($_POST['othermoodplaylist']) && $_POST['othermoodplaylist']==""){
+			require("form10.php");
 			echo "<script> alert('Merci de remplir le champ \'Autre\'') </script>";
 			echo "<script> location.href = history.back(-1) </script>";
 		}else{
 			$mood.= " : ";
-			$othermood = $_POST['othermood'];
+			$othermood = $_POST['othermoodplaylist'];
 			$mood.= $othermood;
-			$requete = 'INSERT INTO '.$dbprefix.' listenmood (mood_name, user_id) VALUES("'.$mood.'","' .$userid.'")';
+			$requete = 'INSERT INTO '.$dbprefix.' namemoodplaylist (mood_name, user_id /*, playlist_id */) VALUES("'.$mood.'","' .$userid.'")';
 			$res = mysql_query($requete);
-			header("Location: form.php");
-			exit;
+					//header("Location:form8.php");
 		}
 	}else{
-		$requete = 'INSERT INTO '.$dbprefix.' listenmood (mood_name, user_id) VALUES("'.$mood.'","' .$userid.'")';
+		$requete = 'INSERT INTO '.$dbprefix.' namemoodplaylist (mood_name, user_id /*, playlist_id */) VALUES("'.$mood.'","' .$userid.'")';
 		$res = mysql_query($requete);
-		header("Location: form.php");
-		exit;
+				//header("Location:form8.php");
 	}
 }else{
-	require("mood.php");
-	echo "<script> alert('Merci de sélectionner une humeur') </script>";
+	require("form10.php");
+	echo "<script> alert('Merci de sélectionner au moins une humeur') </script>";
 	echo "<script> location.href = history.back(-1) </script>";
 }
 

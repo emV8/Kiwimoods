@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
-  <link rel="stylesheet" href="css.css" />
+  <link rel="stylesheet" href="../css.css" />
   <script src="script.js"></script>
 </head>
 
@@ -19,7 +19,7 @@
 </header>
 <div>
 			<?php
-        include 'player.php';
+        include '../player.php';
         genplaylist();
       ?>
 		<div class = "smallquestion">
