@@ -21,8 +21,6 @@
 <div class="text">
 	Comment qualifieriez-vous votre humeur au cours de la journée ?
 </div>
-<div id = "cercle">
-	</div>
 <div id = "currentMood">
 	<form action="currentmood.php" method="post">
 		<div id="excitation"> <img src="img/music/orange.png" width="25%" alt="excitation"> <br/> Excitation <br/> <span class ="radiomood"> <input type='radio' name="mood" value='excitation' /> </span> </div>

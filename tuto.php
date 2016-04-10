@@ -35,7 +35,10 @@
 			Merci de répondre le plus sincèrement possible et n'hésitez pas à remplir le champ "autre". <br/> </li>
 		</ul> <br/>
 		Merci pour votre attention et votre participation !
+		<br/>
+		<input class="suivant" type = "button" value = "Passer à l'écoute" onclick = "self.location.href = 'form.php'"/>
 	</div>
+
 
 </body>
 </html>

@@ -11,7 +11,8 @@ header{
 body{
 	background-color: grey;
 	color: white;
-	font-size: 20px;
+	font-size: 18px;
+	font-family: tahoma;
 }
 
 label{
@@ -26,44 +27,48 @@ label{
 
 
 #connection{
-	font-size: 20px;
+	font-size: 18px;
 	left: 18%;
 }
 
 #logConn{
 	position: absolute;
-	right: 28%;
-	top: 2%;
+	right: 34%;
+	top: 1%;
 }
 
 #mdpConn{
 	position: absolute;
 	right: 15%;
-	top: 2%;
+	top: 1%;
 }
 
 #connection_button{
 	position: absolute;
 	top : 40%;
-	right: 7%;
+	right: 3%;
 }
-
-
 
 .button{
 	border : 1px solid black;
-	border-radius: 3px
+	border-radius: 3px;
 }
 
 #welcome{
 	position: absolute;
-	top:35%;
+	top:12%;
 	left: 8%;
+}
+
+#kiwi{
+	position: absolute;
+	top: 38%;
+	left: 15%;
 }
 
 #inscription{
 	position: absolute;
-	top:30%;
+	top:37%;
 	right:15%;
 }
 
@@ -104,15 +109,6 @@ label{
 	top: 20%;
 }
 
-#cercle{
-	border-radius: 50%;
-	width: 350px;
-	height: 350px;
-	border : 0px solid black;
-	position: absolute;
-	top: 32%;
-	left: 37%;
-}
  
 #excitation
 {
@@ -190,7 +186,10 @@ tr{
 
 .suivant{
 	position: absolute;
+	height: 6%;
 	right: 10%;
+	border : 1px solid black;
+	border-radius: 3px;
 }
 
 <<<<<<< HEAD
