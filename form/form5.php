@@ -39,7 +39,7 @@
 		   </tr>
 
 		   <tr>	   	
-		       <td>  Oui </td>
+		       <td> Oui </td>
 		       <td> <input type='radio' name="connaissancetitre1" value="oui" /> </td>
 		       <td> <input type='radio' name="connaissancetitre2" value="oui" /> </td>
 		       <td> <input type='radio' name="connaissancetitre3" value="oui" /> </td>
@@ -50,7 +50,7 @@
 		   </tr>
 		   
 		   <tr>
-		       <td>Non</td>
+		       <td> Non</td>
 		       <td><input type="radio" name="connaissancetitre1" value="non" /></td>
 		       <td><input type="radio" name="connaissancetitre2" value="non" /></td>
 		       <td><input type="radio" name="connaissancetitre3" value="non" /></td>
@@ -75,7 +75,7 @@
 		   </tr>
 
 		   <tr>	   	
-		       <td>  Oui </td>
+		       <td> Oui </td>
 		       <td> <input type='radio' name="connaissanceartiste1" value="oui" /> </td>
 		       <td> <input type='radio' name="connaissanceartiste2" value="oui" /> </td>
 		       <td> <input type='radio' name="connaissanceartiste3" value="oui" /> </td>
@@ -86,7 +86,7 @@
 		   </tr>
 		   
 		   <tr>
-		       <td>Non</td>
+		       <td> Non</td>
 		       <td><input type="radio" name="connaissanceartiste1" value="non" /></td>
 		       <td><input type="radio" name="connaissanceartiste2" value="non" /></td>
 		       <td><input type="radio" name="connaissanceartiste3" value="non" /></td>

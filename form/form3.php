@@ -38,7 +38,7 @@
 		   </tr>
 
 		   <tr>	   	
-		       <td>  Oui </td>
+		       <td> Oui </td>
 		       <td> <input type='radio' name="gouttitre1" value="oui" /> </td>
 		       <td> <input type='radio' name="gouttitre2" value="oui" /> </td>
 		       <td> <input type='radio' name="gouttitre3" value="oui" /> </td>
@@ -49,7 +49,7 @@
 		   </tr>
 		   
 		   <tr>
-		       <td>Non</td>
+		       <td> Non</td>
 		       <td><input type="radio" name="gouttitre1" value="non" /></td>
 		       <td><input type="radio" name="gouttitre2" value="non" /></td>
 		       <td><input type="radio" name="gouttitre3" value="non" /></td>

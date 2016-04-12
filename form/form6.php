@@ -38,8 +38,8 @@
 				?> ' pour qualifier votre humeur. <br/> 
 				Trouvez-vous qu'elle ait changée après cette écoute ? </b><br/>
 			<br/>
-		       <input type='radio' name="moodplaylist" value="oui" />Oui <br/>
-		       <input type="radio" name="moodplaylist" value="non" />Non <br/>
+		       <input type='radio' name="moodplaylist" value="oui" /> Oui <br/>
+		       <input type="radio" name="moodplaylist" value="non" /> Non <br/>
 			<input class = "suivant" type="submit" value="Suivant >" />
 			<br/>
 			<progress max="10" value = "6"></progress>

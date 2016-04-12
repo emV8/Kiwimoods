@@ -31,6 +31,18 @@ progress{
 	left: 80%;
 }
 
+input[type=checkbox]{
+	transform: scale(1.25);
+	-webkit-transform: scale(1.25);
+}
+
+input[type=radio]{
+	transform: scale(1.25);
+	-webkit-transform: scale(1.25);
+}
+
+
+
 
 #connection{
 	font-size: 18px;
