@@ -36,11 +36,15 @@
 			<input type="checkbox" name="possiblecontextplaylist[]" value="autrec" /> Autre : <input type = "text" name = "autrec1" id = "autrec1" placeholder = "Autre contexte" style="text-align:center"/>
 			<br/>
 			<br/>
+			<div>
 			<input class = "suivant" type="submit" value="Suivant >" />
+			<br/>
+			<progress max="10" value = "9"></progress>
+		</div>
+			<br/>
 		</form>
 	</div>
-	<div> 
-	</div>
+	
 
 </body>
 </html>

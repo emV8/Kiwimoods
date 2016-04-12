@@ -25,6 +25,12 @@ label{
 	
 }
 
+progress{
+	position: relative;
+	top: 20px;
+	left: 80%;
+}
+
 
 #connection{
 	font-size: 18px;
@@ -186,7 +192,7 @@ tr{
 
 .suivant{
 	position: absolute;
-	height: 6%;
+	height: 25px;
 	right: 10%;
 	border : 1px solid black;
 	border-radius: 3px;

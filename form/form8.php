@@ -29,8 +29,12 @@
 		       <input type='radio' name="goutplaylist" value="oui" /> Oui <br/>
 		       <input type="radio" name="goutplaylist" value="non" /> Non <br/>
 			<input class = "suivant" type="submit" value="Suivant >" />
+			<br/>
+			<progress max="10" value = "8"></progress>
+			<br/>
 			</form>
 		</div>
+		
 
 </body>
 </html>

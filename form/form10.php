@@ -38,8 +38,12 @@
 		       <input type="checkbox" name="namemoodplaylist" value="tristesse" /> Tristesse <br/>
 		       <input type="checkbox" name="namemoodplaylist" value="autre" /> Autre : <input type = "text" name = "othermoodplaylist" id = "autre" placeholder = "Autre humeur" style="text-align:center"/> <br/>
 			<input class = "suivant" type="submit" value="Suivant >" />
+			<br/>
+			<progress max="10" value = "10"></progress>
+		<br/>
 			</form>
 		</div>
+		
 
 </body>
 </html>

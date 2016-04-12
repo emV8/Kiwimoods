@@ -37,8 +37,12 @@
 		       <input type="radio" name="newmoodplaylist" value="autre" /> Autre <br/>
 		       <input type = "text" name = "othermoodplaylist" id = "autre" placeholder = "Autre humeur" style="text-align:center"/> <br/>
 			<input class = "suivant" type="submit" value="Suivant >" />
+			<br/>
+			<progress max="10" value = "7"></progress>
+			<br/>
 			</form>
 		</div>
+		
 
 </body>
 </html>

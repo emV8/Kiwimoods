@@ -173,6 +173,9 @@
 			</table>
 			<br/>
 			<input class = "suivant" type="submit" id="contextbutton" value="Suivant >" />
+			<br/> <br/>
+			<progress max="10" value = "2"></progress>
+			<br/>
 			</form>
 		</div>
 

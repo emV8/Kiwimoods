@@ -136,10 +136,12 @@
 			</table>
 			<br/>
 			<input class = "suivant" type="submit" value="Suivant >" />
+			<br/> <br/>
+			<progress max="10" value = "1"></progress>
+			<br/>
 			</form>
 		</div>
-		<div> 
-		</div>
+			
 
 </body>
 </html>
