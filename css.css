@@ -34,6 +34,7 @@ progress{
 input[type=checkbox]{
 	transform: scale(1.25);
 	-webkit-transform: scale(1.25);
+	border-radius: 3px;
 }
 
 input[type=radio]{
