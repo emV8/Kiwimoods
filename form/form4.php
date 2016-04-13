@@ -1,24 +1,5 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="utf-8" />
-  <link rel="stylesheet" href="../css.css" />
-  <script src="script.js"></script>
-</head>
 
-<body>
-<header>
-
-</header>
-
-<div>
-			<?php
-        include '../player.php';
-        genplaylist();
-      ?>
-
-		<div class = "question">
-			<form action="resform4.php" method="post">
+			<form action="resform4.php" method="post" onsubmit="return false">
 			<b> 4. Indépendamment de cette étude, dans quel(s) contexte(s) pourriez-vous réécouter ces titres ? </b><br/>
 			<br/>
 			<table>
@@ -173,13 +154,8 @@
 		   </tr>
 			</table>
 			<br/>
-			<input class = "suivant" type="submit" value="Suivant >" />
+			<input class = "suivant" type="submit" value="Suivant" onclick="loadForm(this)">
 			<br/>
 			<progress max="10" value = "4"></progress>
 			<br/>
 			</form>
-		</div>
-		
-
-</body>
-</html>

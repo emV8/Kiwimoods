@@ -2,6 +2,12 @@
 
 include_once('../../config-tut8.php');
 $connexion = mysql_connect($databaselocation, $databaseuser, $databasepass);
+$ok1 = false;
+$ok2 = false;
+$ok3= false;
+$ok4 = false;
+$ok5 = false;
+$ok6 = false;
 if (!$connexion) {
 	die('Could not connect: ' . mysql_error());
 }
@@ -20,14 +26,12 @@ if(isset($_POST['moodplaylist']) && $_POST['moodplaylist']!=""){
 	$res = mysql_query($requete);
 	$moodplaylist = $_POST['moodplaylist'];
 	if ($moodplaylist=="oui"){
-		header("Location:form7.php");
+		header("Location:form/form7.php");
 	}else{
-		header("Location:form8.php");
+		header("Location:form/form8.php");
 	}
 }else{
-	require("form6.php");
-	echo "<script> alert('Merci de sélectionner un choix') </script>";
-	echo "<script> location.href = history.back(-1) </script>";
+	echo false;
 }
 
 

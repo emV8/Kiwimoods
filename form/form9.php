@@ -1,22 +1,5 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-	  <meta charset="utf-8" />
-	  <link rel="stylesheet" href="../css.css" />
-	  <script src="script.js"></script>
-</head>
 
-<body>
-	<header>
-
-	</header>
-<div>
-			<?php
-        include '../player.php';
-        genplaylist();
-      ?>
-	<div class = "smallquestion">
-		<form action="resform9.php" method="post">
+		<form action="resform9.php" method="post" onsubmit="return false">
 			<b> 10. Indépendamment de cette étude, dans quel(s) contexte(s) pourriez-vous réécouter cette playlist ? </b><br/>
 			<br/>
 
@@ -37,14 +20,9 @@
 			<br/>
 			<br/>
 			<div>
-			<input class = "suivant" type="submit" value="Suivant >" />
+			<input class = "suivant" type="submit" value="Suivant" onclick="loadForm(this)">
 			<br/>
 			<progress max="10" value = "9"></progress>
 		</div>
 			<br/>
 		</form>
-	</div>
-	
-
-</body>
-</html>

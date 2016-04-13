@@ -2,6 +2,12 @@
 
 include_once('../../config-tut8.php');
 $connexion = mysql_connect($databaselocation, $databaseuser, $databasepass);
+$ok1 = false;
+$ok2 = false;
+$ok3= false;
+$ok4 = false;
+$ok5 = false;
+$ok6 = false;
 if (!$connexion) {
 	die('Could not connect: ' . mysql_error());
 }
@@ -37,9 +43,7 @@ if(!empty($_POST['namemoodplaylist'])){
 				//header("Location:form8.php");
 	}
 }else{
-	require("form10.php");
-	echo "<script> alert('Merci de sélectionner au moins une humeur') </script>";
-	echo "<script> location.href = history.back(-1) </script>";
+	echo false;
 }
 
 ?>

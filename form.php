@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="css.css" />
-  <script type="text/javascript" language="Javascript" src="Htm5Playlist/traitement/fonction.js"></script>
+  
 </head>
 
 <body>
@@ -25,10 +25,16 @@
         genplaylist();
       ?>
   </div>
-
-       <input type = "button" id="player_button" value = "Répondre au questionnaire" onclick = "self.location.href = 'form/form1.php'"/>
+</br></br></br></br></br></br></br></br></br></br></br>
+    <div id = "question">
+      <?php
+        include 'form/form1.php';
         
+      ?>
+    </div>
+      
         <script src="jquery.js"></script>
+        <script type="text/javascript" language="Javascript" src="Htm5Playlist/traitement/fonction.js"></script>
         <script src="script.js"></script> 
 </body>
 </html>

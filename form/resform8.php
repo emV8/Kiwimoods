@@ -2,6 +2,12 @@
 
 include_once('../../config-tut8.php');
 $connexion = mysql_connect($databaselocation, $databaseuser, $databasepass);
+$ok1 = false;
+$ok2 = false;
+$ok3= false;
+$ok4 = false;
+$ok5 = false;
+$ok6 = false;
 if (!$connexion) {
 	die('Could not connect: ' . mysql_error());
 }
@@ -19,11 +25,9 @@ if(isset($_POST['goutplaylist']) && $_POST['goutplaylist']!=""){
 	$requete = 'INSERT INTO '.$dbprefix.' likeplaylist (user_id, mood_name /*, playlist_id */) VALUES("'.$_SESSION['userid'].'","' .$goutplaylist.'")';
 	$res = mysql_query($requete);
 	$goutplaylist = $_POST['goutplaylist'];
-	header("Location:form9.php");
+	header("Location:form/form9.php");
 }else{
-	require("form6.php");
-	echo "<script> alert('Merci de sélectionner un choix') </script>";
-	echo "<script> location.href = history.back(-1) </script>";
+	echo false;
 }
 
 
