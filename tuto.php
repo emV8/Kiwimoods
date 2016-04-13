@@ -19,6 +19,7 @@
 	</header>
 
 	<div id = "tuto">
+		<!--
 		Merci de participer à notre expérience !
 		<br/>
 		Voici son déroulement :
@@ -35,9 +36,13 @@
 			Merci de répondre le plus sincèrement possible et n'hésitez pas à remplir le champ "autre". <br/> </li>
 		</ul> <br/>
 		Merci pour votre attention et votre participation !
+		<br/> -->
+		Vous allez écouter 6 playlists et répondre à un questionnaire à la fin de chaque playlist. <br/>
+		Merci d'écouter chaque playlist jusqu'à la fin. <br/>
 		<br/>
-		<input class="suivant" type = "button" value = "Passer à l'écoute" onclick = "self.location.href = 'form.php'"/>
+		Bonne écoute !
 	</div>
+	<input class="tuto_button" type = "button" value = "Passer à l'écoute >" onclick = "self.location.href = 'form.php'"/>
 
 
 </body>

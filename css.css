@@ -108,9 +108,17 @@ input[type=radio]{
 
 #tuto{
 	position: absolute;
-	top: 17%;
-	left: 10%;
-	font-size: 22px;
+	top: 30%;
+	left: 4%;
+	text-align: center;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.tuto_button{
+	position: absolute;
+	top: 60%;
+	left: 48%;
 }
 
 .radiomood{
