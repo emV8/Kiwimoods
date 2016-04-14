@@ -15,6 +15,8 @@
 		session_start();
 		echo $_SESSION['login'];
 	}
+
+	
 	?>
 	</div>
 </header>
@@ -26,7 +28,24 @@
       ?>
   </div>
 
-       <input type = "button" id="player_button" value = "Répondre au questionnaire" onclick = "self.location.href = 'form/form1.php'"/>
+       <?php 
+
+       if ($_SESSION['tuto2']){
+			$location = 'form/form1.php';
+		}else{
+			$location = 'tuto2.php';
+		}
+
+		?>
+
+
+       <input type = "button" id="player_button" value = "Répondre au questionnaire >"/>
+       <script>
+       	var btn = document.getElementById("player_button");
+       	btn.addEventListener('click', function(){
+       		document.location.href = '<?php echo $location ?>';
+       	});
+       </script>
         
         <script src="jquery.js"></script>
         <script src="script.js"></script> 

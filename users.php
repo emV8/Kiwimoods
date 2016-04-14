@@ -69,6 +69,8 @@
 				session_start();
 				$_SESSION['login'] = $identifiant;
 				$_SESSION['userid'] = $userid;
+				$_SESSION['tuto1'] = false;
+				$_SESSION['tuto2'] = false;
 				header('Location: tuto.php');    
 			}else{
 				require("index.html");

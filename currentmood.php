@@ -29,14 +29,24 @@ if(!empty($_POST['mood'])){
 			$mood.= $othermood;
 			$requete = 'INSERT INTO '.$dbprefix.' listenmood (mood_name, user_id) VALUES("'.$mood.'","' .$userid.'")';
 			$res = mysql_query($requete);
-			header("Location: form.php");
-			exit;
+			if($_SESSION['tuto1']){	
+				header("Location: form.php");
+				exit;
+			}else{
+				header("Location: tuto1.php");
+				exit;
+			}
 		}
 	}else{
 		$requete = 'INSERT INTO '.$dbprefix.' listenmood (mood_name, user_id) VALUES("'.$mood.'","' .$userid.'")';
 		$res = mysql_query($requete);
-		header("Location: form.php");
-		exit;
+		if($_SESSION['tuto1']){	
+				header("Location: form.php");
+				exit;
+			}else{
+				header("Location: tuto1.php");
+				exit;
+			}
 	}
 }else{
 	require("mood.php");

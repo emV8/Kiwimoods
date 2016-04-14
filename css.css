@@ -1,4 +1,3 @@
-
 header{
 	background-color: black;
 	position: absolute;
@@ -107,18 +106,12 @@ input[type=radio]{
 }
 
 #tuto{
-	position: absolute;
-	top: 30%;
-	left: 4%;
+	margin-top: 13%;
+	display: table;
+	margin-left: 8%;
 	text-align: center;
-	font-size: 28px;
+	font-size: 25px;
 	font-weight: bold;
-}
-
-.tuto_button{
-	position: absolute;
-	top: 60%;
-	left: 48%;
 }
 
 .radiomood{
