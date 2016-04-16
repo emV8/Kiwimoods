@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="css.css" />
-  <script type="text/javascript" language="Javascript" src="Htm5Playlist/traitement/fonction.js"></script>
+  
 </head>
 
 <body>
@@ -27,6 +27,12 @@
         genplaylist();
       ?>
   </div>
+<<<<<<< HEAD
+</br></br></br></br></br></br></br></br></br></br></br>
+    <div id = "question">
+      <?php
+        include 'form/form1.php';
+=======
 
        <?php 
 
@@ -46,8 +52,13 @@
        		document.location.href = '<?php echo $location ?>';
        	});
        </script>
+>>>>>>> origin/master
         
+      ?>
+    </div>
+      
         <script src="jquery.js"></script>
+        <script type="text/javascript" language="Javascript" src="Htm5Playlist/traitement/fonction.js"></script>
         <script src="script.js"></script> 
 </body>
 </html>

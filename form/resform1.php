@@ -2,6 +2,12 @@
 
 include_once('../../config-tut8.php');
 $connexion = mysql_connect($databaselocation, $databaseuser, $databasepass);
+$ok1 = false;
+$ok2 = false;
+$ok3= false;
+$ok4 = false;
+$ok5 = false;
+$ok6 = false;
 if (!$connexion) {
 	die('Could not connect: ' . mysql_error());
 }
@@ -16,7 +22,6 @@ $userid = $_SESSION['userid'];
 
 if(!empty($_POST['etitre1'])){
 	global $dbprefix;
-	$ok1 = false;
 	foreach($_POST['etitre1'] as $selected){
 		$context = $selected;
 		if ($selected=="autre"){
@@ -38,14 +43,11 @@ if(!empty($_POST['etitre1'])){
 		}
 	}
 }else{
-	require("form1.php");
-	echo "<script> alert('Merci de sélectionner au moins une émotion pour le titre 1') </script>";
-	echo "<script> location.href = history.back(-1) </script>";
+	echo false;
 }
 
 if(!empty($_POST['etitre2'])){
 	global $dbprefix;
-	$ok2 = false;
 	foreach($_POST['etitre2'] as $selected){
 		$context = $selected;
 		if ($selected=="autre"){
@@ -67,14 +69,11 @@ if(!empty($_POST['etitre2'])){
 		}
 	}
 }else{
-	require("form1.php");
-	echo "<script> alert('Vous devez sélectionner au moins une émotion pour le titre 2') </script>";
-	echo "<script> location.href = history.back(-1) </script>";
+	echo false;
 }
 
 if(!empty($_POST['etitre3'])){
 	global $dbprefix;
-	$ok3 = false;
 	foreach($_POST['etitre3'] as $selected){
 		$context = $selected;
 		if ($selected=="autre"){
@@ -96,14 +95,11 @@ if(!empty($_POST['etitre3'])){
 		}
 	}
 }else{
-	require("form1.php");
-	echo "<script> alert('Vous devez sélectionner au moins une émotion pour le titre 3') </script>";
-	echo "<script> location.href = history.back(-1) </script>";
+	echo false;
 }
 
 if(!empty($_POST['etitre4'])){
 	global $dbprefix;
-	$ok4 = false;
 	foreach($_POST['etitre4'] as $selected){
 		$context = $selected;
 		if ($selected=="autre"){
@@ -126,14 +122,11 @@ if(!empty($_POST['etitre4'])){
 	}
 }
 else{
-	require("form1.php");
-	echo "<script> alert('Vous devez sélectionner au moins une émotion pour le titre 4') </script>";
-	echo "<script> location.href = history.back(-1) </script>";
+	echo false;
 }
 
 if(!empty($_POST['etitre5'])){
 	global $dbprefix;
-	$ok5 = false;
 	foreach($_POST['etitre5'] as $selected){
 		$context = $selected;
 		if ($selected=="autre"){
@@ -155,14 +148,11 @@ if(!empty($_POST['etitre5'])){
 		}
 	}
 }else{
-	require("form1.php");
-	echo "<script> alert('Vous devez sélectionner au moins une émotion pour le titre 5') </script>";
-	echo "<script> location.href = history.back(-1) </script>";
+	echo false;
 }
 
 if(!empty($_POST['etitre6'])){
 	global $dbprefix;
-	$ok6 = false;
 	foreach($_POST['etitre6'] as $selected){
 		$context = $selected;
 		if ($selected=="autre"){
@@ -184,13 +174,11 @@ if(!empty($_POST['etitre6'])){
 		}
 	}
 }else{
-	require("form1.php");
-	echo "<script> alert('Vous devez sélectionner au moins une émotion pour le titre 6') </script>";
-	echo "<script> location.href = history.back(-1) </script>";
+	echo false;
 }
 
 if ($ok1 && $ok2 && $ok3 && $ok4 && $ok5 && $ok6){
-	header("Location:form2.php");
+	header("Location:form/form2.php");
 }
 
 

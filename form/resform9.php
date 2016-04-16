@@ -2,6 +2,12 @@
 
 include_once('../../config-tut8.php');
 $connexion = mysql_connect($databaselocation, $databaseuser, $databasepass);
+$ok1 = false;
+$ok2 = false;
+$ok3= false;
+$ok4 = false;
+$ok5 = false;
+$ok6 = false;
 if (!$connexion) {
 	die('Could not connect: ' . mysql_error());
 }
@@ -29,18 +35,16 @@ if(!empty($_POST['possiblecontextplaylist'])){
 				$context.= $othercontext;
 				$requete = 'INSERT INTO '.$dbprefix.' possiblecontextplaylist (context_name, user_id /*, playlist_id */) VALUES("'.$context.'","' .$userid.'")';
 				$res = mysql_query($requete);
-				header("Location:form10.php")
+				header("Location:form/form10.php")
 			}
 		}else{
 			$requete = 'INSERT INTO '.$dbprefix.' possiblecontextplaylist (context_name, user_id /*, playlist_id */) VALUES("'.$context.'","' .$userid.'")';
 			$res = mysql_query($requete);
-			header("Location:form10.php")
+			header("Location:form/form10.php")
 		}
 	}
 }else{
-	require("form9.php");
-	echo "<script> alert('Merci de sélectionner au moins un contexte') </script>";
-	echo "<script> location.href = history.back(-1) </script>";
+	echo false;
 }
 
 ?>

@@ -2,6 +2,12 @@
 
 include_once('../../config-tut8.php');
 $connexion = mysql_connect($databaselocation, $databaseuser, $databasepass);
+$ok1 = false;
+$ok2 = false;
+$ok3= false;
+$ok4 = false;
+$ok5 = false;
+$ok6 = false;
 if (!$connexion) {
 	die('Could not connect: ' . mysql_error());
 }
@@ -29,17 +35,15 @@ if(!empty($_POST['newmoodplaylist'])){
 			$mood.= $othermood;
 			$requete = 'INSERT INTO '.$dbprefix.' moodplaylist (mood_name, user_id /*, playlist_id */) VALUES("'.$mood.'","' .$userid.'")';
 			$res = mysql_query($requete);
-			header("Location:form8.php");
+			header("Location:form/form8.php");
 		}
 	}else{
 		$requete = 'INSERT INTO '.$dbprefix.' moodplaylist (mood_name, user_id /*, playlist_id */) VALUES("'.$mood.'","' .$userid.'")';
 		$res = mysql_query($requete);
-		header("Location:form8.php");
+		header("Location:form/form8.php");
 	}
 }else{
-	require("form7.php");
-	echo "<script> alert('Merci de sélectionner au moins une humeur') </script>";
-	echo "<script> location.href = history.back(-1) </script>";
+	echo false;
 }
 
 ?>

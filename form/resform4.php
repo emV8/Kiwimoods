@@ -2,6 +2,12 @@
 
 include_once('../../config-tut8.php');
 $connexion = mysql_connect($databaselocation, $databaseuser, $databasepass);
+$ok1 = false;
+$ok2 = false;
+$ok3= false;
+$ok4 = false;
+$ok5 = false;
+$ok6 = false;
 if (!$connexion) {
 	die('Could not connect: ' . mysql_error());
 }
@@ -17,7 +23,6 @@ $userid = $_SESSION['userid'];
 
 if(!empty($_POST['cptitre1'])){
 	global $dbprefix;
-	$ok1 = false;
 	foreach($_POST['cptitre1'] as $selected){
 		$context = $selected;
 		if ($selected=="autrec"){
@@ -39,14 +44,11 @@ if(!empty($_POST['cptitre1'])){
 		}
 	}
 }else{
-	require("form4.php");
-	echo "<script> alert('Merci de sélectionner au moins un contexte pour le titre 1') </script>";
-	echo "<script> location.href = history.back(-1) </script>";
+	echo false;
 }
 
 if(!empty($_POST['cptitre2'])){
 	global $dbprefix;
-	$ok2 = false;
 	foreach($_POST['cptitre2'] as $selected){
 		$context = $selected;
 		if ($selected=="autrec"){
@@ -68,14 +70,11 @@ if(!empty($_POST['cptitre2'])){
 		}
 	}
 }else{
-	require("form4.php");
-	echo "<script> alert('Vous devez sélectionner au moins un contexte pour le titre 2') </script>";
-	echo "<script> location.href = history.back(-1) </script>";
+	echo false;
 }
 
 if(!empty($_POST['cptitre3'])){
 	global $dbprefix;
-	$ok3 = false;
 	foreach($_POST['cptitre3'] as $selected){
 		$context = $selected;
 		if ($selected=="autrec"){
@@ -97,14 +96,11 @@ if(!empty($_POST['cptitre3'])){
 		}
 	}
 }else{
-	require("form4.php");
-	echo "<script> alert('Vous devez sélectionner au moins un contexte pour le titre 3') </script>";
-	echo "<script> location.href = history.back(-1) </script>";
+	echo false;
 }
 
 if(!empty($_POST['cptitre4'])){
 	global $dbprefix;
-	$ok4 = false;
 	foreach($_POST['cptitre4'] as $selected){
 		$context = $selected;
 		if ($selected=="autrec"){
@@ -127,14 +123,11 @@ if(!empty($_POST['cptitre4'])){
 	}
 }
 else{
-	require("form4.php");
-	echo "<script> alert('Vous devez sélectionner au moins un contexte pour le titre 4') </script>";
-	echo "<script> location.href = history.back(-1) </script>";
+	echo false;
 }
 
 if(!empty($_POST['cptitre5'])){
 	global $dbprefix;
-	$ok5 = false;
 	foreach($_POST['cptitre5'] as $selected){
 		$context = $selected;
 		if ($selected=="autrec"){
@@ -156,14 +149,11 @@ if(!empty($_POST['cptitre5'])){
 		}
 	}
 }else{
-	require("form4.php");
-	echo "<script> alert('Vous devez sélectionner au moins un contexte pour le titre 5') </script>";
-	echo "<script> location.href = history.back(-1) </script>";
+	echo false;
 }
 
 if(!empty($_POST['cptitre6'])){
 	global $dbprefix;
-	$ok6 = false;
 	foreach($_POST['cptitre6'] as $selected){
 		$context = $selected;
 		if ($selected=="autrec"){
@@ -185,13 +175,11 @@ if(!empty($_POST['cptitre6'])){
 		}
 	}
 }else{
-	require("form4.php");
-	echo "<script> alert('Vous devez sélectionner au moins un contexte pour le titre 6') </script>";
-	echo "<script> location.href = history.back(-1) </script>";
+	echo false;
 }
 
 if ($ok1 && $ok2 && $ok3 && $ok4 && $ok5 && $ok6){
-	header("Location:form5.php");
+	header("Location:form/form5.php");
 }
 
 ?>

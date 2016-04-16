@@ -212,6 +212,15 @@ tr{
 	border-radius: 3px;
 }
 
+tr:hover{
+    background-color:black;
+}
+table{
+    
+    border:0;
+    border-collapse:collapse;
+}
+
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
