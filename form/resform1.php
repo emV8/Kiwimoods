@@ -1,7 +1,10 @@
 <?php
 
-include_once('../../config-tut8.php');
-$connexion = mysql_connect($databaselocation, $databaseuser, $databasepass);
+$connexion = mysql_connect("localhost", "root");
+$bdd = mysql_select_db("kiwimoods", $connexion);
+mysql_query("SET NAMES 'utf8'");
+session_start();
+$userid = $_SESSION['userid'];
 $ok1 = false;
 $ok2 = false;
 $ok3= false;
@@ -11,14 +14,13 @@ $ok6 = false;
 if (!$connexion) {
 	die('Could not connect: ' . mysql_error());
 }
-$bdd = mysql_select_db($databasename, $connexion);
+
 if (!$bdd) {
 	die ('Impossible de sélectionner la base de données : ' . mysql_error());
 }
 mysql_query("SET NAMES 'utf8'");
 
-session_start();
-$userid = $_SESSION['userid'];
+
 
 if(!empty($_POST['etitre1'])){
 	global $dbprefix;
@@ -32,12 +34,12 @@ if(!empty($_POST['etitre1'])){
 				$context.= " : ";
 				$othercontext = $_POST['autre1'];
 				$context.= $othercontext;
-				$requete = 'INSERT INTO '.$dbprefix.' emotion (emotion_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
+				$requete = 'INSERT INTO  emotion (emotion_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
 				$res = mysql_query($requete);
 				$ok1 = true;
 			}
 		}else{
-			$requete = 'INSERT INTO '.$dbprefix.' emotion (emotion_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
+			$requete = 'INSERT INTO  emotion (emotion_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
 			$res = mysql_query($requete);
 			$ok1 = true;
 		}
@@ -58,12 +60,12 @@ if(!empty($_POST['etitre2'])){
 				$context.= " : ";
 				$othercontext = $_POST['autre2'];
 				$context.= $othercontext;
-				$requete = 'INSERT INTO '.$dbprefix.' emotion (emotion_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
+				$requete = 'INSERT INTO  emotion (emotion_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
 				$res = mysql_query($requete);
 				$ok2 = true;
 			}
 		}else{
-			$requete = 'INSERT INTO '.$dbprefix.' emotion (emotion_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
+			$requete = 'INSERT INTO  emotion (emotion_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
 			$res = mysql_query($requete);
 			$ok2 = true;
 		}
@@ -84,12 +86,12 @@ if(!empty($_POST['etitre3'])){
 				$context.= " : ";
 				$othercontext = $_POST['autre3'];
 				$context.= $othercontext;
-				$requete = 'INSERT INTO '.$dbprefix.' emotion (emotion_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
+				$requete = 'INSERT INTO  emotion (emotion_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
 				$res = mysql_query($requete);
 				$ok3 = true;
 			}
 		}else{
-			$requete = 'INSERT INTO '.$dbprefix.' emotion (emotion_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
+			$requete = 'INSERT INTO  emotion (emotion_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
 			$res = mysql_query($requete);
 			$ok3 = true;
 		}
@@ -110,12 +112,12 @@ if(!empty($_POST['etitre4'])){
 				$context.= " : ";
 				$othercontext = $_POST['autre4'];
 				$context.= $othercontext;
-				$requete = 'INSERT INTO '.$dbprefix.' emotion (emotion_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
+				$requete = 'INSERT INTO  emotion (emotion_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
 				$res = mysql_query($requete);
 				$ok4 = true;
 			}
 		}else{
-			$requete = 'INSERT INTO '.$dbprefix.' emotion (emotion_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
+			$requete = 'INSERT INTO  emotion (emotion_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
 			$res = mysql_query($requete);
 			$ok4 = true;
 		}
@@ -137,12 +139,12 @@ if(!empty($_POST['etitre5'])){
 				$context.= " : ";
 				$othercontext = $_POST['autre5'];
 				$context.= $othercontext;
-				$requete = 'INSERT INTO '.$dbprefix.' emotion (emotion_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
+				$requete = 'INSERT INTO  emotion (emotion_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
 				$res = mysql_query($requete);
 				$ok5 = true;
 			}
 		}else{
-			$requete = 'INSERT INTO '.$dbprefix.' emotion (emotion_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
+			$requete = 'INSERT INTO  emotion (emotion_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
 			$res = mysql_query($requete);
 			$ok5 = true;
 		}
@@ -163,12 +165,12 @@ if(!empty($_POST['etitre6'])){
 				$context.= " : ";
 				$othercontext = $_POST['autre6'];
 				$context.= $othercontext;
-				$requete = 'INSERT INTO '.$dbprefix.' emotion (emotion_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
+				$requete = 'INSERT INTO  emotion (emotion_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
 				$res = mysql_query($requete);
 				$ok6 = true;
 			}
 		}else{
-			$requete = 'INSERT INTO '.$dbprefix.' emotion (emotion_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
+			$requete = 'INSERT INTO  emotion (emotion_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
 			$res = mysql_query($requete);
 			$ok6 = true;
 		}
@@ -178,7 +180,7 @@ if(!empty($_POST['etitre6'])){
 }
 
 if ($ok1 && $ok2 && $ok3 && $ok4 && $ok5 && $ok6){
-	header("Location:form/form2.php");
+	header("Location:form2.php");
 }
 
 
