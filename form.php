@@ -32,7 +32,6 @@
     <div id = "question">
       <?php
         include 'form/form1.php';
-=======
 
        <?php 
 
@@ -52,7 +51,7 @@
        		document.location.href = '<?php echo $location ?>';
        	});
        </script>
->>>>>>> origin/master
+
         
       ?>
     </div>
