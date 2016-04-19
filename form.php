@@ -27,14 +27,11 @@
         genplaylist();
       ?>
   </div>
-<<<<<<< HEAD
 </br></br></br></br></br></br></br></br></br></br></br>
     <div id = "question">
       <?php
         include 'form/form1.php';
-=======
 
-       <?php 
 
        if ($_SESSION['tuto2']){
 			$location = 'form/form1.php';
@@ -52,9 +49,7 @@
        		document.location.href = '<?php echo $location ?>';
        	});
        </script>
->>>>>>> origin/master
         
-      ?>
     </div>
       
         <script src="jquery.js"></script>
