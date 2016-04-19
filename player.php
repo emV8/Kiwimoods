@@ -39,7 +39,7 @@ include 'Htm5Playlist/PlayList.php';
             //*******************************
             //on renseigne deux Arrays, un pour les chemins vers les musiques à lire, 
             //un deuxième pour les titres.
-            $chemin[0] = "http://dariumis.fr/lesMp3/1412862486_4166.mp3";
+            $chemin[0] = "http://www.aht.li/2876432/Aerosmith_-_Dream_On_HQ_-_remix.mp3";
             $titre[0] = "titre 1";
             $chemin[1] = "http://dariumis.fr/lesMp3/1411336191_6685.mp3";
             $titre[1] = "titre 2";
