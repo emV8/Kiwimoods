@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 
 <?php
+
+$connexion = mysql_connect("localhost", "root");
+$bdd = mysql_select_db("kiwimoods", $connexion);
+mysql_query("SET NAMES 'utf8'");
+
 include 'Htm5Playlist/PlayList.php';
 ?>
 <html lang="fr">
@@ -35,23 +40,44 @@ include 'Htm5Playlist/PlayList.php';
         function genplaylist()
         {
             $playList = new PlayList("Htm5Playlist/");
+
+
+            $title = array();
+            $artist = array();
+            $link = array();
+            $requete = "SELECT titre, artiste, lien FROM music WHERE playlist_id = '".$_SESSION['playlist_id']."'";
+            $res = mysql_query($requete);   
+            while($row = mysql_fetch_array($res)){
+                $title[] = $row['titre'];
+                $artist[] = $row['artiste'];
+                $link[] = $row['lien'];
+
+            }
             //*******************************
             // version 2: par des Array!
             //*******************************
             //on renseigne deux Arrays, un pour les chemins vers les musiques à lire, 
             //un deuxième pour les titres.
-            $chemin[0] = "http://www.aht.li/2876432/Aerosmith_-_Dream_On_HQ_-_remix.mp3";
-            $titre[0] = "titre 1";
-            $chemin[1] = "http://dariumis.fr/lesMp3/1411336191_6685.mp3";
-            $titre[1] = "titre 2";
-             $chemin[2] = "http://dariumis.fr/lesMp3/1411336191_6685.mp3";
-            $titre[2] = "titre 2";
-             $chemin[3] = "http://dariumis.fr/lesMp3/1411336191_6685.mp3";
-            $titre[3] = "titre 2";
-             $chemin[4] = "http://dariumis.fr/lesMp3/1411336191_6685.mp3";
-            $titre[4] = "titre 2";
-             $chemin[5] = "http://dariumis.fr/lesMp3/1411336191_6685.mp3";
-            $titre[5] = "titre 2";
+
+
+            $chemin[0] = $link[0];
+            $titre[0] = $title[0]." - ".$artist[0];
+
+            $chemin[1] = $link[1];
+            $titre[1] = $title[1]." - ".$artist[1];
+
+            $chemin[2] = $link[2];
+            $titre[2] = $title[2]." - ".$artist[2];
+
+            $chemin[3] = $link[3];
+            $titre[3] = $title[3]." - ".$artist[3];
+
+            $chemin[4] = $link[4];
+            $titre[4] = $title[4]." - ".$artist[4];
+
+            $chemin[5] = $link[5];
+            $titre[5] = $title[5]." - ".$artist[5];
+
             //on place simplement la playliste généré par les Arrays grâce à 
             //la fonction getArray($id, $chemin, $titre).
             // Les paramètres de cette fonction sont dans l'ordre:
