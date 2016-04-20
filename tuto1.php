@@ -29,7 +29,7 @@
 		Bonne écoute !
 		<br/>
 		<br/>
-		<span> <input type = "button" value = "Passer à l'écoute >" onclick = "self.location.href = 'form.php'"/> </span>
+		<span> <input type = "button" class="suivant" value = "Passer à l'écoute >" onclick = "self.location.href = 'form.php'"/> </span>
 	</div>
 	
 

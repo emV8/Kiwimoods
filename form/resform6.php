@@ -20,7 +20,7 @@ if (!$bdd) {
 
 if(isset($_POST['moodplaylist']) && $_POST['moodplaylist']!=""){
 	global $dbprefix;
-	$requete = 'INSERT INTO '.$dbprefix.' moodplaylist (user_id, mood_name /*, playlist_id */) VALUES("'.$_SESSION['userid'].'","' .$moodplaylist.'")';
+	$requete = 'INSERT INTO  moodplaylist (user_id, mood_name /*, playlist_id */) VALUES("'.$_SESSION['userid'].'","' .$moodplaylist.'")';
 	$res = mysql_query($requete);
 	$moodplaylist = $_POST['moodplaylist'];
 	if ($moodplaylist=="oui"){

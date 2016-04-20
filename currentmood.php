@@ -1,5 +1,6 @@
 <?php
 
+/*
 include_once('../../config-tut8.php');
 $connexion = mysql_connect($databaselocation, $databaseuser, $databasepass);
 if (!$connexion) {
@@ -9,6 +10,10 @@ $bdd = mysql_select_db($databasename, $connexion);
 if (!$bdd) {
 	die ('Impossible de sélectionner la base de données : ' . mysql_error());
 }
+mysql_query("SET NAMES 'utf8'");
+*/
+$connexion = mysql_connect("localhost", "root");
+$bdd = mysql_select_db("kiwimoods", $connexion);
 mysql_query("SET NAMES 'utf8'");
 
 session_start();
@@ -27,7 +32,7 @@ if(!empty($_POST['mood'])){
 			$mood.= " : ";
 			$othermood = $_POST['othermood'];
 			$mood.= $othermood;
-			$requete = 'INSERT INTO '.$dbprefix.' listenmood (mood_name, user_id) VALUES("'.$mood.'","' .$userid.'")';
+			$requete = 'INSERT INTO listenmood (mood_name, user_id) VALUES("'.$mood.'","' .$userid.'")';
 			$res = mysql_query($requete);
 			if($_SESSION['tuto1']){	
 				header("Location: form.php");

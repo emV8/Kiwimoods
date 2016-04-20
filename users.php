@@ -1,5 +1,6 @@
 <?php
 
+/*
 	include_once('../../config-tut8.php');
 	$connexion = mysql_connect($databaselocation, $databaseuser, $databasepass);
 	if (!$connexion) {
@@ -9,6 +10,10 @@
 	if (!$bdd) {
        die ('Impossible de sélectionner la base de données : ' . mysql_error());
     }
+	mysql_query("SET NAMES 'utf8'");
+	*/
+	$connexion = mysql_connect("localhost", "root");
+	$bdd = mysql_select_db("kiwimoods", $connexion);
 	mysql_query("SET NAMES 'utf8'");
 
 
@@ -23,13 +28,13 @@
 		$identifiant = $_POST['loginConn'];
 		$mdp = $_POST['passwordConn'];
 		$mdpcode = md5($mdp);
-		$requete = "SELECT * FROM ".$dbprefix." user WHERE login = '".$identifiant."' AND mdp = '".$mdpcode."'";
+		$requete = "SELECT * FROM  user WHERE login = '".$identifiant."' AND mdp = '".$mdpcode."'";
 		$res = mysql_query($requete);
 		
 		$row = mysql_fetch_row($res);
 		if ($row[0]){
 			echo "Vous êtes connecté, '".$identifiant."'";
-			$requete3 = "SELECT user_id FROM ".$dbprefix." user WHERE login = '".$identifiant."'";
+			$requete3 = "SELECT user_id FROM  user WHERE login = '".$identifiant."'";
 			$res = mysql_query($requete3);
 			$userid = mysql_fetch_row($res)[0];
 			session_start();
@@ -54,15 +59,15 @@
 		}else{
 			$mail = "";
 		}
-		$requete = "SELECT * FROM ".$dbprefix." user WHERE login = '".$identifiant."'";
+		$requete = "SELECT * FROM  user WHERE login = '".$identifiant."'";
 		$res = mysql_query($requete);
 		$row = mysql_fetch_row($res);
 		if (!$row[0]){
 			$mdpcode = md5($mdp);
-			$requete2 = "INSERT INTO ".$dbprefix." user (login, mdp, mail) VALUES("'.$identifiant.'","' .$mdpcode.'", "' .$mail.'")";
+			$requete2 = "INSERT INTO  user (login, mdp, mail) VALUES('".$identifiant."','" .$mdpcode."', '" .$mail."')";
 			$res2 = mysql_query($requete2);
 			if ($res2){
-				$requete3 = "SELECT user_id FROM ".$dbprefix." user WHERE login = '".$identifiant."'";
+				$requete3 = "SELECT user_id FROM  user WHERE login = '".$identifiant."'";
 				$res = mysql_query($requete3);
 				$tmp = mysql_fetch_row($res);
 			    $userid = $tmp[0];

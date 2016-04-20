@@ -1,6 +1,24 @@
 
 			<form action = "form/resform2.php" method="post" onsubmit="return false">
-			<b> 2. Dans le cadre de cette expérience, dans quel(s) contexte(s) avez-vous écouté chacun de ces titres ? </b><br/>
+			<b> 2. Dans le cadre de cette expérience, dans quel(s) contexte(s) avez-vous écouté chacun de ces titres ? 
+				<a href="#" class="test">[?]
+						<div class="raised">
+						<b class="top"><b class="b1"></b><b class="b2"></b><b class="b3"></b><b class="b4"></b></b>
+						<div class="boxcontent">
+						 
+						<b> Exemple d'autres contextes possibles : </b>
+						<p>
+						 
+						En faisant la vaisselle - En faisant le ménage ... <br />
+						Sous la douche - Dans le lit ... <br />
+						Avant de s'endormir - Après le repas ... <br />
+						... <br/>
+						</p>
+						</div>
+						<b class="bottom"><b class="b4b"></b><b class="b3b"></b><b class="b2b"></b><b class="b1b"></b></b>
+						</div>
+					</a>
+			</b><br/>
 			<br/>
 			<table>
    			<tr>
@@ -122,25 +140,7 @@
 		       <td><input type="checkbox" name="ctitre6[]" value="famille" /></td>
 		   </tr>
 		   <tr>
-		       <td style="text-align:left">Autre
-		       	<a href="#" class="test">[?]
-						<div class="raised">
-						<b class="top"><b class="b1"></b><b class="b2"></b><b class="b3"></b><b class="b4"></b></b>
-						<div class="boxcontent">
-						 
-						<b> Exemple d'autres contextes possibles : </b>
-						<p>
-						 
-						En faisant la vaisselle - En faisant le ménage ... <br />
-						Sous la douche - Dans le lit ... <br />
-						Avant de s'endormir - Après le repas ... <br />
-						... <br/>
-						</p>
-						</div>
-						<b class="bottom"><b class="b4b"></b><b class="b3b"></b><b class="b2b"></b><b class="b1b"></b></b>
-						</div>
-					</a>
-		       </td>
+		       <td style="text-align:left">Autre</td>
 		       <td> <br/> <input type="checkbox" name="ctitre1[]" value="autre" />
 		       <br/>
 		       <input type = "text" name = "autre1" id = "autre1" placeholder = "Autre contexte" style="text-align:center"/>

@@ -27,7 +27,7 @@
 		Bon courage pour le questionnaire !
 		<br/>
 		<br/>
-		<span> <input type = "button" value = "Répondre au questionnaire >" onclick = "self.location.href = 'form/form1.php'"/> </span>
+		<span> <input type = "button" class="suivant" value = "Répondre au questionnaire >" onclick = "self.location.href = 'form/form1.php'"/> </span>
 	</div>
 	
 

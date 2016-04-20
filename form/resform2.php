@@ -31,12 +31,12 @@ if(!empty($_POST['ctitre1'])){
 				$context.= " : ";
 				$othercontext = $_POST['autre1'];
 				$context.= $othercontext;
-				$requete = 'INSERT INTO '.$dbprefix.' listencontext (context_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
+				$requete = 'INSERT INTO  listencontext (context_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
 				$res = mysql_query($requete);
 				$ok1 = true;
 			}
 		}else{
-			$requete = 'INSERT INTO '.$dbprefix.' listencontext (context_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
+			$requete = 'INSERT INTO  listencontext (context_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
 			$res = mysql_query($requete);
 			$ok1 = true;
 		}
@@ -57,12 +57,12 @@ if(!empty($_POST['ctitre2'])){
 				$context.= " : ";
 				$othercontext = $_POST['autre2'];
 				$context.= $othercontext;
-				$requete = 'INSERT INTO '.$dbprefix.' listencontext (context_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
+				$requete = 'INSERT INTO  listencontext (context_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
 				$res = mysql_query($requete);
 				$ok2 = true;
 			}
 		}else{
-			$requete = 'INSERT INTO '.$dbprefix.' listencontext (context_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
+			$requete = 'INSERT INTO  listencontext (context_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
 			$res = mysql_query($requete);
 			$ok2 = true;
 		}
@@ -83,12 +83,12 @@ if(!empty($_POST['ctitre3'])){
 				$context.= " : ";
 				$othercontext = $_POST['autre3'];
 				$context.= $othercontext;
-				$requete = 'INSERT INTO '.$dbprefix.' listencontext (context_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
+				$requete = 'INSERT INTO  listencontext (context_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
 				$res = mysql_query($requete);
 				$ok3 = true;
 			}
 		}else{
-			$requete = 'INSERT INTO '.$dbprefix.' listencontext (context_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
+			$requete = 'INSERT INTO  listencontext (context_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
 			$res = mysql_query($requete);
 			$ok3 = true;
 		}
@@ -109,12 +109,12 @@ if(!empty($_POST['ctitre4'])){
 				$context.= " : ";
 				$othercontext = $_POST['autre4'];
 				$context.= $othercontext;
-				$requete = 'INSERT INTO '.$dbprefix.' listencontext (context_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
+				$requete = 'INSERT INTO  listencontext (context_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
 				$res = mysql_query($requete);
 				$ok4 = true;
 			}
 		}else{
-			$requete = 'INSERT INTO '.$dbprefix.' listencontext (context_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
+			$requete = 'INSERT INTO  listencontext (context_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
 			$res = mysql_query($requete);
 			$ok4 = true;
 		}
@@ -136,12 +136,12 @@ if(!empty($_POST['ctitre5'])){
 				$context.= " : ";
 				$othercontext = $_POST['autre5'];
 				$context.= $othercontext;
-				$requete = 'INSERT INTO '.$dbprefix.' listencontext (context_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
+				$requete = 'INSERT INTO  listencontext (context_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
 				$res = mysql_query($requete);
 				$ok5 = true;
 			}
 		}else{
-			$requete = 'INSERT INTO '.$dbprefix.' listencontext (context_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
+			$requete = 'INSERT INTO  listencontext (context_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
 			$res = mysql_query($requete);
 			$ok5 = true;
 		}
@@ -162,12 +162,12 @@ if(!empty($_POST['ctitre6'])){
 				$context.= " : ";
 				$othercontext = $_POST['autre6'];
 				$context.= $othercontext;
-				$requete = 'INSERT INTO '.$dbprefix.' listencontext (context_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
+				$requete = 'INSERT INTO  listencontext (context_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
 				$res = mysql_query($requete);
 				$ok6 = true;
 			}
 		}else{
-			$requete = 'INSERT INTO '.$dbprefix.' listencontext (context_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
+			$requete = 'INSERT INTO  listencontext (context_name, user_id /*, music_id */) VALUES("'.$context.'","' .$userid.'")';
 			$res = mysql_query($requete);
 			$ok6 = true;
 		}

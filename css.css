@@ -295,8 +295,6 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* aide */
-
 
 input {
   padding: 10px;
@@ -325,11 +323,14 @@ button {
   margin: auto;
 
 }
-/*
+
+/* aide */
 
 input::-webkit-input-placeholder {
   color: white;
-.raised {background: transparent; width:700px; height: 500px; margin:0 auto; position:absolute;top:35px; left:10px; display:none; color:black;}
+}
+
+.raised {background: transparent; width:500px; height: 500px; margin:0 auto; position:absolute;top:35px; left:10px; display:none; color:black;}
 .raised p {padding-bottom:0.5em;}
  
 .raised .top, .raised .bottom {display:block; background:transparent; font-size:1px;}
@@ -351,12 +352,15 @@ input::-webkit-input-placeholder {
 .raised .boxcontent {display:block;  background:#ccc; border-left:1px solid #fff; border-right:1px solid #999;}
  
 .test{
-	position:relative;
+	position:absolute;
+	top: -1%;
+	color: #e74c3c;
+	z-index: 1;
 }
 .test:hover .raised{
 	display:block;
 
 }
-*/
+
 
 
