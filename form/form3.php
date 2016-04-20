@@ -1,5 +1,5 @@
 
-			<form action="resform3.php" method="post" onsubmit="return false">
+			<form action="form/resform3.php" method="post" onsubmit="return false">
 			<b> 3. Avez-vous apprécié ces titres ? </b><br/>
 			<br/>
 			<table>

@@ -43,6 +43,14 @@ include 'Htm5Playlist/PlayList.php';
             $titre[0] = "titre 1";
             $chemin[1] = "http://dariumis.fr/lesMp3/1411336191_6685.mp3";
             $titre[1] = "titre 2";
+             $chemin[2] = "http://dariumis.fr/lesMp3/1411336191_6685.mp3";
+            $titre[2] = "titre 2";
+             $chemin[3] = "http://dariumis.fr/lesMp3/1411336191_6685.mp3";
+            $titre[3] = "titre 2";
+             $chemin[4] = "http://dariumis.fr/lesMp3/1411336191_6685.mp3";
+            $titre[4] = "titre 2";
+             $chemin[5] = "http://dariumis.fr/lesMp3/1411336191_6685.mp3";
+            $titre[5] = "titre 2";
             //on place simplement la playliste généré par les Arrays grâce à 
             //la fonction getArray($id, $chemin, $titre).
             // Les paramètres de cette fonction sont dans l'ordre:

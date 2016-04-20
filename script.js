@@ -17,7 +17,7 @@ function loadForm(elem) {
             {
                 if(html!=false)
                 {
-                     $('#question').slideUp().html(html).slideDown();
+                     $('.question').slideUp().html(html).slideDown();
                 }
                 else{
                    alert("Veuillez remplir tous les champs du questionnaire")

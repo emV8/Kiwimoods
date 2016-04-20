@@ -1,14 +1,15 @@
 header{
-	background-color: black;
+	background-color: #054F04;
 	position: absolute;
 	top: 0;
 	left: 0;
 	height: 7%;
 	width: 100%;
+    color: white;
 }
 
 body{
-	background-color: grey;
+	background-color: white;
 	color: white;
 	font-size: 18px;
 	font-family: tahoma;
@@ -44,6 +45,7 @@ input[type=radio]{
 
 
 
+
 #connection{
 	font-size: 18px;
 	left: 18%;
@@ -67,10 +69,6 @@ input[type=radio]{
 	right: 3%;
 }
 
-.button{
-	border : 1px solid black;
-	border-radius: 3px;
-}
 
 #welcome{
 	position: absolute;
@@ -91,9 +89,16 @@ input[type=radio]{
 }
 
 #inscription_button{
-	position: relative;
-	top : 35%;
-	left: 15%;
+	
+  float: top;
+  border: 0px;
+  border-radius: 7px;
+  padding: 0px;
+  color: white;
+  font-size: 18px;
+  background-color:#e74c3c
+ 
+    
 }
 
 
@@ -103,6 +108,7 @@ input[type=radio]{
 	position: absolute;
 	top: 12%;
 	left: 10%;
+    
 }
 
 #tuto{
@@ -194,22 +200,27 @@ tr{
 
 .question{
 	position: absolute;
-	top: 30%;
+	top: 35%;
 	left: 3%;
 }
 
 .smallquestion{
 	position: absolute;
-	top: 30%;
+	top: 35%;
 	left: 20%;
 }
 
 .suivant{
 	position: absolute;
 	height: 25px;
-	right: 10%;
-	border : 1px solid black;
-	border-radius: 3px;
+	right: 5%;
+	float: top;
+    border: 0px;
+    border-radius: 7px;
+    padding: 0px;
+    color: white;
+    background-color:#e74c3c;
+    font-size: 18px;
 }
 
 tr:hover{
@@ -221,19 +232,18 @@ table{
     border-collapse:collapse;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 .player_cls{
-                margin: auto;
-                margin-top: 50px;
-                border-radius: 15px;
-                background: rgb(90%,90%,90%);
-                border: outset 2px gray;
-                box-shadow: 3px 3px 10px black;
-                width: 25%!important;
+    margin: auto;
+    color:black;
+    margin-top: 50px;
+    border-radius: 15px;
+    background: rgb(90%,90%,90%);
+    border: outset 2px gray;
+    box-shadow: 3px 3px 10px black;
+    width: 25%!important;
             }
-=======
+
 #end{
 	position: absolute;
 	top: 25%;
@@ -252,14 +262,72 @@ table{
 	position: absolute;
 	top: 55%;
 	left: 46%;
+    color:black;
 }
 
 
 
->>>>>>> origin/master
-=======
 
->>>>>>> parent of 8f33bc7... ajoute rappels playlists
-=======
 
->>>>>>> parent of 8f33bc7... ajoute rappels playlists
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: rgba(255, 255, 255, .8);
+  margin-left: 12px;
+}
+
+body {
+  background: #272125;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+input {
+  padding: 10px;
+  border-radius: 7px;
+  border: 0px;
+  background: rgba(255, 255, 255, .2);
+  display: block;
+  margin: 10px;
+  width: 300px;
+  color: white;
+  font-size: 14px;
+  height: 25px;
+}
+
+
+
+button {
+  float: top;
+  border: 0px;
+  background: #e74c3c;
+  border-radius: 7px;
+  padding: 5px;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  margin: auto;
+
+}
+
+
+input::-webkit-input-placeholder {
+  color: white;
+}
+
+
+

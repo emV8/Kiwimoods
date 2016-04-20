@@ -1,5 +1,5 @@
 
-			<form action="resform7.php" method="post" onsubmit="return false">
+			<form action="form/resform7.php" method="post" onsubmit="return false">
 			<b> 8. Si oui, vers quelle humeur a-t-elle changé ? </b><br/>
 			<br/>
 		       <input type='radio' name="newmoodplaylist" value="colère" /> Colère <br/>

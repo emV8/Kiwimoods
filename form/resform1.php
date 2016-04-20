@@ -5,12 +5,14 @@ $bdd = mysql_select_db("kiwimoods", $connexion);
 mysql_query("SET NAMES 'utf8'");
 session_start();
 $userid = $_SESSION['userid'];
+
 $ok1 = false;
 $ok2 = false;
 $ok3= false;
 $ok4 = false;
 $ok5 = false;
 $ok6 = false;
+
 if (!$connexion) {
 	die('Could not connect: ' . mysql_error());
 }
@@ -18,9 +20,6 @@ if (!$connexion) {
 if (!$bdd) {
 	die ('Impossible de sélectionner la base de données : ' . mysql_error());
 }
-mysql_query("SET NAMES 'utf8'");
-
-
 
 if(!empty($_POST['etitre1'])){
 	global $dbprefix;

@@ -28,7 +28,7 @@
       ?>
   </div>
 </br></br></br></br></br></br></br></br></br></br></br>
-    <div id = "question">
+    <div class = "question">
       <?php
         include 'form/form1.php';
 

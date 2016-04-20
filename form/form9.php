@@ -1,5 +1,5 @@
 
-		<form action="resform9.php" method="post" onsubmit="return false">
+		<form action="form/resform9.php" method="post" onsubmit="return false">
 			<b> 10. Indépendamment de cette étude, dans quel(s) contexte(s) pourriez-vous réécouter cette playlist ? </b><br/>
 			<br/>
 

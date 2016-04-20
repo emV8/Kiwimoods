@@ -1,5 +1,5 @@
 
-			<form action="resform8.php" method="post" onsubmit="return false">
+			<form action="form/resform8.php" method="post" onsubmit="return false">
 			<b> 9. Avez-vous apprécié cette playlist ? </b><br/>
 			<br/>	
 		       <input type='radio' name="goutplaylist" value="oui" /> Oui <br/>

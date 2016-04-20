@@ -1,5 +1,5 @@
 
-			<form action="resform10.php" method="post" onsubmit="return false">
+			<form action="form/resform10.php" method="post" onsubmit="return false">
 			<b> 11. A quelle(s) humeur(s) associeriez-vous cette playlist ? </b><br/>
 			<br/>
 		       <input type='checkbox' name="namemoodplaylist" value="colère" /> Colère <br/>

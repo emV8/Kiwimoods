@@ -1,5 +1,5 @@
 
-			<form action="resform5.php" method="post" onsubmit="return false">
+			<form action="form/resform5.php" method="post" onsubmit="return false">
 			<b> 5. Connaissiez-vous chacun de ces titres avant cette écoute ? </b><br/>
 			<br/>
 			<table>

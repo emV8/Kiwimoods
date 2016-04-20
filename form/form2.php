@@ -1,5 +1,5 @@
 
-			<form action = "resform2.php" method="post" onsubmit="return false">
+			<form action = "form/resform2.php" method="post" onsubmit="return false">
 			<b> 2. Dans le cadre de cette expérience, dans quel(s) contexte(s) avez-vous écouté chacun de ces titres ? </b><br/>
 			<br/>
 			<table>

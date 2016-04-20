@@ -1,5 +1,5 @@
 
-			<form action="resform6.php" method="post" onsubmit="return false">
+			<form action="form/resform6.php" method="post" onsubmit="return false">
 			<b> 7. Avant d'écouter cette playlist, vous avez choisi '
 				<?php
 					$connexion = mysql_connect("localhost", "root");
