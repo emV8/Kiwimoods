@@ -87,7 +87,7 @@
 		   </tr>
 		    <tr>
 		       <td style="text-align:left">Autre
-					<a href="#" class="test">[?]
+					<!--<a href="#" class="test">[?]
 						<div class="raised">
 						<b class="top"><b class="b1"></b><b class="b2"></b><b class="b3"></b><b class="b4"></b></b>
 						<div class="boxcontent">
@@ -108,7 +108,7 @@
 						</div>
 						<b class="bottom"><b class="b4b"></b><b class="b3b"></b><b class="b2b"></b><b class="b1b"></b></b>
 						</div>
-					</a>	
+					</a>	-->
 		       </td>
 		       <td><br/><input type="checkbox" name="etitre1[]" value="autre" />
 		       <br/>

@@ -297,7 +297,7 @@ body {
 
 /* aide */
 
-<<<<<<< HEAD
+
 input {
   padding: 10px;
   border-radius: 7px;
@@ -325,11 +325,10 @@ button {
   margin: auto;
 
 }
-
+/*
 
 input::-webkit-input-placeholder {
   color: white;
-=======
 .raised {background: transparent; width:700px; height: 500px; margin:0 auto; position:absolute;top:35px; left:10px; display:none; color:black;}
 .raised p {padding-bottom:0.5em;}
  
@@ -356,8 +355,8 @@ input::-webkit-input-placeholder {
 }
 .test:hover .raised{
 	display:block;
->>>>>>> origin/master
-}
 
+}
+*/
 
 
