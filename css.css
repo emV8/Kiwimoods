@@ -124,7 +124,7 @@ fieldset
 	margin-top: 13%;
 	display: table;
 	margin-left: 8%;
-	text-align: center;
+	text-align: justify;
 	font-size: 25px;
 	font-weight: bold;
 }
@@ -134,7 +134,7 @@ fieldset
 	display: table;
 	margin-left: 25%;
     margin-right: 25%;
-	text-align: center;
+	text-align: justify;
 	font-size: 25px;
 	font-weight: bold;
 }

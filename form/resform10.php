@@ -32,11 +32,18 @@ if(!empty($_POST['namemoodplaylist'])){
 			$mood.= $othermood;
 			$requete = 'INSERT INTO  namemoodplaylist (mood_name, user_id /*, playlist_id */) VALUES("'.$mood.'","' .$userid.'")';
 			$res = mysql_query($requete);
+
+			$requete2 = 'INSERT INTO  listened (user_id, playlist_id) VALUES("'.$userid.'","' .$_SESSION['playlist_id'].'")';
+			$res2 = mysql_query($requete2);
 			header("Location:tuto2.php");
 		}
 	}else{
 		$requete = 'INSERT INTO  namemoodplaylist (mood_name, user_id /*, playlist_id */) VALUES("'.$mood.'","' .$userid.'")';
 		$res = mysql_query($requete);
+
+		$requete2 = 'INSERT INTO  listened (user_id, playlist_id) VALUES("'.$userid.'","' .$_SESSION['playlist_id'].'")';
+			$res2 = mysql_query($requete2);
+			header("Location:tuto2.php");
 			header("Location:tuto2.php");
 	}
 }else{
