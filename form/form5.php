@@ -24,11 +24,11 @@
    			<tr>
    				<th> </th>
 		       <th> <?php echo $title[0] ?> </th>
-		       <th> <?php echo $title[0] ?> </th>
-		       <th> <?php echo $title[0] ?> </th>
-		       <th> <?php echo $title[0] ?> </th>
-		       <th> <?php echo $title[0] ?> </th>
-		       <th> <?php echo $title[0] ?> </th>
+		       <th> <?php echo $title[1] ?> </th>
+		       <th> <?php echo $title[2] ?> </th>
+		       <th> <?php echo $title[3] ?> </th>
+		       <th> <?php echo $title[4] ?> </th>
+		       <th> <?php echo $title[5] ?> </th>
 		   </tr>
 
 		   <tr>	   	
@@ -59,12 +59,12 @@
 			<table>
    			<tr>
    				<th> </th>
-		       <th>Titre 1</th>
-		       <th>Titre 2</th>
-		       <th>Titre 3</th>
-		       <th>Titre 4</th>
-		       <th>Titre 5</th>
-		       <th>Titre 6</th>
+		       <th> <?php echo $artist[0] ?> </th>
+		       <th> <?php echo $artist[1] ?> </th>
+		       <th> <?php echo $artist[2] ?> </th>
+		       <th> <?php echo $artist[3] ?> </th>
+		       <th> <?php echo $artist[4] ?> </th>
+		       <th> <?php echo $artist[5] ?> </th>
 		   </tr>
 
 		   <tr>	   	

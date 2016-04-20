@@ -42,7 +42,28 @@
             <input class = "suivanttuto" type="submit" value="Répondre au questionnaire" onclick="self.location.href='form.php'"/>
         </div>
 
-  
+ <?php
+
+ $listened_playlist = array();
+//$requete = "SELECT playlist_id FROM listened WHERE user_id = '".$userid."'";
+$requete = "SELECT playlist_id FROM listened WHERE user_id = 1";
+$res = mysql_query($requete);	
+while($row = mysql_fetch_array($res)){
+	$listened_playlist[] = $row['playlist_id'];
+}
+
+if (count($listened_playlist)!=6){
+				$all_playlist = range(1,6);
+				shuffle($all_playlist);
+				foreach ($all_playlist as $id) {
+					if (!in_array($id, $listened_playlist)){
+						$_SESSION['playlist_id'] = $id;
+						break;
+					}
+				}
+			}
+
+ ?> 
       
         <script src="jquery.js"></script>
         <script type="text/javascript" language="Javascript" src="Htm5Playlist/traitement/fonction.js"></script>

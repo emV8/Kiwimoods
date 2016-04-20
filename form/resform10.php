@@ -35,7 +35,12 @@ if(!empty($_POST['namemoodplaylist'])){
 
 			$requete2 = 'INSERT INTO  listened (user_id, playlist_id) VALUES("'.$userid.'","' .$_SESSION['playlist_id'].'")';
 			$res2 = mysql_query($requete2);
-			header("Location:tuto2.php");
+			if ($res2){
+				echo 'dans bdd';
+			}else{
+				echo 'pas dans bdd';
+			}
+			//header("Location:tuto2.php");
 		}
 	}else{
 		$requete = 'INSERT INTO  namemoodplaylist (mood_name, user_id /*, playlist_id */) VALUES("'.$mood.'","' .$userid.'")';
@@ -43,8 +48,13 @@ if(!empty($_POST['namemoodplaylist'])){
 
 		$requete2 = 'INSERT INTO  listened (user_id, playlist_id) VALUES("'.$userid.'","' .$_SESSION['playlist_id'].'")';
 			$res2 = mysql_query($requete2);
+			if ($res2){
+				echo 'dans bdd';
+			}else{
+				echo 'pas dans bdd';
+			}/*
 			header("Location:tuto2.php");
-			header("Location:tuto2.php");
+			header("Location:tuto2.php");*/
 	}
 }else{
 	echo false;
