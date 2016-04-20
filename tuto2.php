@@ -12,7 +12,7 @@
 	<?php
 	if (session_status() == PHP_SESSION_NONE || session_id()== ""){
 		session_start();
-		echo $_SESSION['login'];
+		echo "Bienvenue, ". $_SESSION['login']." !";
 	}
 	$_SESSION['tuto2'] = true;
 	?>
