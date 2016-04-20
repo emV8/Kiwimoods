@@ -1,16 +1,34 @@
+<?php
+	$connexion = mysql_connect("localhost", "root");
+	$bdd = mysql_select_db("kiwimoods", $connexion);
+	mysql_query("SET NAMES 'utf8'");
 
+	session_start();
+
+	$title = array();
+            $artist = array();
+            $link = array();
+            $requete = "SELECT titre, artiste, lien FROM music WHERE playlist_id = '".$_SESSION['playlist_id']."'";
+            $res = mysql_query($requete);   
+            while($row = mysql_fetch_array($res)){
+                $title[] = $row['titre'];
+                $artist[] = $row['artiste'];
+                $link[] = $row['lien'];
+
+            }
+?>
 			<form action="form/resform3.php" method="post" onsubmit="return false">
 			<b> 3. Avez-vous apprécié ces titres ? </b><br/>
 			<br/>
 			<table>
    			<tr>
    				<th> </th>
-		       <th>Titre 1</th>
-		       <th>Titre 2</th>
-		       <th>Titre 3</th>
-		       <th>Titre 4</th>
-		       <th>Titre 5</th>
-		       <th>Titre 6</th>
+		       <th> <?php echo $title[0] ?> </th>
+		       <th> <?php echo $title[1] ?> </th>
+		       <th> <?php echo $title[2] ?> </th>
+		       <th> <?php echo $title[3] ?> </th>
+		       <th> <?php echo $title[4] ?> </th>
+		       <th> <?php echo $title[5] ?> </th>
 		   </tr>
 
 		   <tr>	   	
