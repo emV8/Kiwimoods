@@ -35,7 +35,7 @@ if(!empty($_POST['mood'])){
 			$requete = 'INSERT INTO listenmood (mood_name, user_id) VALUES("'.$mood.'","' .$userid.'")';
 			$res = mysql_query($requete);
 			if($_SESSION['tuto1']){	
-				header("Location: form.php");
+				header("Location: tuto2.php");
 				exit;
 			}else{
 				header("Location: tuto1.php");
@@ -46,7 +46,7 @@ if(!empty($_POST['mood'])){
 		$requete = 'INSERT INTO '.$dbprefix.' listenmood (mood_name, user_id) VALUES("'.$mood.'","' .$userid.'")';
 		$res = mysql_query($requete);
 		if($_SESSION['tuto1']){	
-				header("Location: form.php");
+				header("Location: tuto2.php");
 				exit;
 			}else{
 				header("Location: tuto1.php");

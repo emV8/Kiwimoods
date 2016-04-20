@@ -12,7 +12,7 @@
 			<?php
 			if (session_status() == PHP_SESSION_NONE || session_id()== ""){
 				session_start();
-				echo $_SESSION['login'];
+				echo "Bienvenue, ". $_SESSION['login']." !";
 			}
 			?>
 		</div>
@@ -21,35 +21,36 @@
 		Vous avez écouté chacune des playlists et répondu aux questionnaires. <br/>
 		Merci pour votre participation et pour l'attention que vous avez portez à cette expérience ! :-) <br/>
 		<p id = "txt" hidden> Votre message a bien été pris en compte, merci. </p>
-	</div>
-
-	<div id = "suggestion">
-		<form action="end.php" method="post">
+        
+        <br />
+        <br />
+        
+        <form action="end.php" method="post">
 			<textarea name="suggestion" id = "sugg" rows="10" cols="50">Si vous avez des suggestions, merci de les renseigner ici.</textarea>
-			<input class = "suivant" type="submit" value="Envoyer" id = "sugg_button" />
+            <br />
+            <input class = "suivant" type="submit" value="Envoyer" id = "sugg_button" />           
 		</form>
-	</div>
+	</div> 
 </body>
 </html>
 
 <?php
 
-include_once('../../config-tut8.php');
-$connexion = mysql_connect($databaselocation, $databaseuser, $databasepass);
+$connexion = mysql_connect("localhost", "root");
+$bdd = mysql_select_db("kiwimoods", $connexion);
+mysql_query("SET NAMES 'utf8'");
+$userid = $_SESSION['userid'];
 if (!$connexion) {
 	die('Could not connect: ' . mysql_error());
 }
-$bdd = mysql_select_db($databasename, $connexion);
 if (!$bdd) {
 	die ('Impossible de sélectionner la base de données : ' . mysql_error());
 }
-mysql_query("SET NAMES 'utf8'");
 
-$userid = $_SESSION['userid'];
 
 if (isset($_POST['suggestion']) && $_POST['suggestion']!="" && $_POST['suggestion']!='Si vous avez des suggestions, merci de les renseigner ici.'){
-	global $dbprefix;
-	$requete = 'INSERT INTO '.$dbprefix.' suggestion (suggestion_message, user_id) VALUES("'.$_POST['suggestion'].'","' .$userid.'")';
+
+	$requete = 'INSERT INTO  suggestion (suggestion_message, user_id) VALUES("'.$_POST['suggestion'].'","' .$userid.'")';
 	$res = mysql_query($requete);
 	if ($res){
 		echo "<script> document.getElementById('txt').style.display = 'block'; </script>";

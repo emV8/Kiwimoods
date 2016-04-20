@@ -33,11 +33,14 @@
 	<img id = "kiwi" src = "img/kiwi.png" width="30%"/>
 	<div id = "inscription"> 
 		<form action = "users.php" method = "post">
+        <fieldset>
+        <legend><b>Inscription</b></legend>
 			<label for = "logInscription"> Identifiant </label> </br> <input type = "text" name = "logInscription"placeholder = "Entrez un pseudo" required/> <br/> <br/>
 			<label for = "passwordInscription"> Mot de passe </label> </br> <input type = "password" name = "passwordInscription"placeholder = "Entrez un mot de passe" required/> <br/><br/>
-			<label for = "mail"> Si vous êtes prêt à participer à de futures études,<br/> merci de renseigner votre adresse email </label> <br/> <input type = "email" name = "mail"placeholder = "Entrez votre adresse email"/> <br/>
+			<label for = "mail"> Adresse email (facultatif) </label> <br/> <input type = "email" name = "mail"placeholder = "Entrez votre adresse email"/> <br/>
 		</br>
-		<input type = "submit" name = "inscription" value = " Inscription" class="button" id = "inscription_button"/>
+		<input type = "submit" name = "inscription" value = " S'inscrire" class="button" id = "inscription_button"/>
+        </fieldset>
 	</form>
     
     

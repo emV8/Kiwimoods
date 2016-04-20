@@ -138,8 +138,5 @@
 			<progress max="10" value = "1"></progress>
 			<br/>
 			</form>
-		</div>
+	
 			
-
-</body>
-</html>

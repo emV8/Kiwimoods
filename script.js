@@ -3,7 +3,6 @@ $(document).ready(function() {
 });
 
 
-
 function loadForm(elem) {
     formulaire=$(elem).parent('form');
     

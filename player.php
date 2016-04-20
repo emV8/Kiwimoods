@@ -22,7 +22,8 @@ include 'Htm5Playlist/PlayList.php';
                 width: 25%!important;
                 position: absolute;
                 top: 10%;
-                left: 40%;
+                left: 25%;
+                right:25%
             }
         </style>
 
