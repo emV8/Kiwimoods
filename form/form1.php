@@ -113,23 +113,23 @@
 		       <td style="text-align:left">Autre</td>
 		       <td><br/><input type="checkbox" name="etitre1[]" value="autre" />
 		       <br/>
-		       <input type = "text" name = "autre1" id = "autre1" placeholder = "Autre émotion" style="text-align:center"/>
+		       <input type = "text" name = "autre1" id = "autre1" placeholder = "Si autre, écrire une/des émotion(s)" style="text-align:center"/>
 		   </td>
 		       <td><br/><input type="checkbox" name="etitre2[]" value="autre" />
 		       <br/>
-		       <input type = "text" name = "autre2" id = "autre2" placeholder = "Autre émotion" style="text-align:center"/></td>
+		       <input type = "text" name = "autre2" id = "autre2" placeholder = "Si autre, écrire une/des émotion(s)" style="text-align:center"/></td>
 		       <td><br/><input type="checkbox" name="etitre3[]" value="autre"/>
 		       <br/>
-		       <input type = "text" name = "autre3" id = "autre3" placeholder = "Autre émotion" style="text-align:center"/></td>
+		       <input type = "text" name = "autre3" id = "autre3" placeholder = "Si autre, écrire une/des émotion(s)" style="text-align:center"/></td>
 		       <td><br/><input type="checkbox" name="etitre4[]" value="autre" />
 		       <br/>
-		       <input type = "text" name = "autre4" id = "autre4" placeholder = "Autre émotion" style="text-align:center"/></td>
+		       <input type = "text" name = "autre4" id = "autre4" placeholder = "Si autre, écrire une/des émotion(s)" style="text-align:center"/></td>
 		       <td><br/><input type="checkbox" name="etitre5[]" value="autre" />
 		       <br/>
-		       <input type = "text" name = "autre5" id = "autre5" placeholder = "Autre émotion" style="text-align:center"/></td>
+		       <input type = "text" name = "autre5" id = "autre5" placeholder = "Si autre, écrire une/des émotion(s)" style="text-align:center"/></td>
 		       <td><br/><input type="checkbox" name="etitre6[]" value="autre"/>
 		       <br/>
-		       <input type = "text" name = "autre6" id = "autre6" placeholder = "Autre émotion" style="text-align:center"/></td>
+		       <input type = "text" name = "autre6" id = "autre6" placeholder = "Si autre, écrire une/des émotion(s)" style="text-align:center"/></td>
 		   </tr>
 			</table>
 			<br/>

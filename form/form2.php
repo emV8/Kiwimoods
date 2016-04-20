@@ -143,23 +143,23 @@
 		       <td style="text-align:left">Autre</td>
 		       <td> <br/> <input type="checkbox" name="ctitre1[]" value="autre" />
 		       <br/>
-		       <input type = "text" name = "autre1" id = "autre1" placeholder = "Autre contexte" style="text-align:center"/>
+		       <input type = "text" name = "autre1" id = "autre1" placeholder = "Si autre, écrire un/des contexte(s)" style="text-align:center"/>
 		   </td>
 		       <td><br/><input type="checkbox" name="ctitre2[]" value="autre" />
 		       <br/>
-		       <input type = "text" name = "autre2" id = "autre2" placeholder = "Autre contexte" style="text-align:center"/></td>
+		       <input type = "text" name = "autre2" id = "autre2" placeholder = "Si autre, écrire un/des contexte(s)" style="text-align:center"/></td>
 		       <td><br/><input type="checkbox" name="ctitre3[]" value="autre"/>
 		       <br/>
-		       <input type = "text" name = "autre3" id = "autre3" placeholder = "Autre contexte" style="text-align:center"/></td>
+		       <input type = "text" name = "autre3" id = "autre3" placeholder = "Si autre, écrire un/des contexte(s)" style="text-align:center"/></td>
 		       <td><br/><input type="checkbox" name="ctitre4[]" value="autre" />
 		       <br/>
-		       <input type = "text" name = "autre4" id = "autre4" placeholder = "Autre contexte" style="text-align:center"/></td>
+		       <input type = "text" name = "autre4" id = "autre4" placeholder = "Si autre, écrire un/des contexte(s)" style="text-align:center"/></td>
 		       <td><br/><input type="checkbox" name="ctitre5[]" value="autre" />
 		       <br/>
-		       <input type = "text" name = "autre5" id = "autre5" placeholder = "Autre contexte" style="text-align:center"/></td>
+		       <input type = "text" name = "autre5" id = "autre5" placeholder = "Si autre, écrire un/des contexte(s)" style="text-align:center"/></td>
 		       <td><br/><input type="checkbox" name="ctitre6[]" value="autre"/>
 		       <br/>
-		       <input type = "text" name = "autre6" id = "autre6" placeholder = "Autre contexte" style="text-align:center"/></td>
+		       <input type = "text" name = "autre6" id = "autre6" placeholder = "Si autre, écrire un/des contexte(s)" style="text-align:center"/></td>
 		   </tr>
 			</table>
 			<br/>

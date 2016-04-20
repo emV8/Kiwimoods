@@ -34,7 +34,7 @@
 		       <input type="checkbox" name="namemoodplaylist" value="ennui" /> Ennui <br/>
 		       <input type="checkbox" name="namemoodplaylist" value="tristesse" /> Tristesse <br/>
 		       <input type="checkbox" name="namemoodplaylist" value="autre" /> Autre : 
-		       <input type = "text" name = "othermoodplaylist" id = "autre" placeholder = "Autre humeur" style="text-align:center"/> <br/>
+		       <input type = "text" name = "othermoodplaylist" id = "autre" placeholder = "Si autre, écrire une/des humeur(s)" style="text-align:center"/> <br/>
 			<input class = "suivant" type="submit" value="Suivant >" />
 		       <input type="checkbox" name="namemoodplaylist" value="autre" /> Autre : <input type = "text" name = "othermoodplaylist" id = "autre" placeholder = "Autre humeur" style="text-align:center"/> <br/>
 			<input class = "suivant" type="submit" value="Suivant" onclick="loadForm(this)">
