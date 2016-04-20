@@ -38,7 +38,7 @@ class List_play {
 
     private function UnSon($v, $id, $path, $i) {
         $str = "<button onclick=\"setSon('$i','$id','$path')\" "
-                . "style=\"margin-bottom:5px;background:transparent;cursor:pointer;width:100%;overflow:hidden;text-align:left;display:block;padding:0.2%;border:none;font-style:italic; font-size:14px;\"class=\"unSon\">&nbsp;&nbsp;" . ($i + 1) . "- " . htmlspecialchars(stripcslashes($v)) . "</button>";
+                . "style=\"margin-bottom:5px;color:black;background:transparent;cursor:pointer;width:100%;overflow:hidden;text-align:left;display:block;padding:0.2%;border:none;font-style:italic; font-size:14px;\"class=\"unSon\">&nbsp;&nbsp;" . ($i + 1) . "- " . htmlspecialchars(stripcslashes($v)) . "</button>";
         return $str;
     }
 
