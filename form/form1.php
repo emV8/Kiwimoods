@@ -86,7 +86,30 @@
 		       <td><input type="checkbox" name="etitre6[]" value="indifference" /></td>
 		   </tr>
 		    <tr>
-		       <td style="text-align:left">Autre</td>
+		       <td style="text-align:left">Autre
+					<a href="#" class="test">[?]
+						<div class="raised">
+						<b class="top"><b class="b1"></b><b class="b2"></b><b class="b3"></b><b class="b4"></b></b>
+						<div class="boxcontent">
+						 
+						<b> Exemple d'autres adjectifs possibles pour qualifier vos émotions : </b>
+						<p>
+						 
+						Tranquille - À l'aise - Attentif - Concentré ... <br />
+						Surpris - Choqué - Confus - Dérouté ... <br />
+						Abbatu - Chagriné - Démoralisé - Déprimé ... <br />
+						Acerbe - Agacé - Amer - Contrarié ... <br />
+						Furieux - Enragé - Furax - Furibon ... <br />
+						Affolé - Alarmé - Angoissé - Anxieux ... <br />
+						Dégoûté - Écœuré - Rébuté - Révulsé ... <br />
+						Amusé - Comblé - Content - Égayé ... <br />
+						... </br>
+						</p>
+						</div>
+						<b class="bottom"><b class="b4b"></b><b class="b3b"></b><b class="b2b"></b><b class="b1b"></b></b>
+						</div>
+					</a>	
+		       </td>
 		       <td><br/><input type="checkbox" name="etitre1[]" value="autre" />
 		       <br/>
 		       <input type = "text" name = "autre1" id = "autre1" placeholder = "Autre émotion" style="text-align:center"/>

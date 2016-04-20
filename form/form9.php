@@ -16,7 +16,25 @@
 			<input type="checkbox" name="possiblecontextplaylist[]" value="amis" /> Avec des amis<br/>
 			<input type="checkbox" name="possiblecontextplaylist[]" value="compagnon" /> Avec son compagnon/sa compagne<br/>
 			<input type="checkbox" name="possiblecontextplaylist[]" value="famille" /> Avec sa famille<br/>
-			<input type="checkbox" name="possiblecontextplaylist[]" value="autrec" /> Autre : <input type = "text" name = "autrec1" id = "autrec1" placeholder = "Autre contexte" style="text-align:center"/>
+			<input type="checkbox" name="possiblecontextplaylist[]" value="autrec" /> Autre :
+			<a href="#" class="test">[?]
+						<div class="raised">
+						<b class="top"><b class="b1"></b><b class="b2"></b><b class="b3"></b><b class="b4"></b></b>
+						<div class="boxcontent">
+						 
+						<b> Exemple d'autres contextes possibles : </b>
+						<p>
+						 
+						En faisant la vaisselle - En faisant le ménage ... <br />
+						Sous la douche - Dans le lit ... <br />
+						Avant de s'endormir - Après le repas ... <br />
+						... <br/>
+						</p>
+						</div>
+						<b class="bottom"><b class="b4b"></b><b class="b3b"></b><b class="b2b"></b><b class="b1b"></b></b>
+						</div>
+					</a>
+			<input type = "text" name = "autrec1" id = "autrec1" placeholder = "Autre contexte" style="text-align:center"/>
 			<br/>
 			<br/>
 			<div>

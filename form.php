@@ -31,6 +31,16 @@
     <div class = "question">
       <?php
         include 'form/form1.php';
+<<<<<<< HEAD
+
+
+       if ($_SESSION['tuto2']){
+			$location = 'form/form1.php';
+		}else{
+			$location = 'tuto2.php';
+		}
+=======
+>>>>>>> origin/master
 
 		?>
 
@@ -41,8 +51,12 @@
        		document.location.href = '<?php echo $location ?>';
        	});
        </script>
+<<<<<<< HEAD
+        
+=======
 
      
+>>>>>>> origin/master
     </div>
       
         <script src="jquery.js"></script>
