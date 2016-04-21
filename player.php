@@ -2,9 +2,8 @@
 
 <?php
 
-$connexion = mysql_connect("localhost", "root");
-$bdd = mysql_select_db("kiwimoods", $connexion);
-mysql_query("SET NAMES 'utf8'");
+$connexion = mysqli_connect("localhost", "root", "", "kiwimoods");
+$connexion -> query("SET NAMES 'utf8'");
 
 include 'Htm5Playlist/PlayList.php';
 ?>
@@ -37,7 +36,7 @@ include 'Htm5Playlist/PlayList.php';
          * vers la racine du dossier Htm5Playlist/, prenez garde à renseigner le chemin 
           exacte */
           
-        function genplaylist()
+        function genplaylist($connexion)
         {
             $playList = new PlayList("Htm5Playlist/");
 
@@ -46,8 +45,8 @@ include 'Htm5Playlist/PlayList.php';
             $artist = array();
             $link = array();
             $requete = "SELECT titre, artiste, lien FROM music WHERE playlist_id = '".$_SESSION['playlist_id']."'";
-            $res = mysql_query($requete);   
-            while($row = mysql_fetch_array($res)){
+            $res = $connexion -> query($requete);   
+            while($row = mysqli_fetch_array($res)){
                 $title[] = $row['titre'];
                 $artist[] = $row['artiste'];
                 $link[] = $row['lien'];

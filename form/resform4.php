@@ -1,8 +1,7 @@
 <?php
 
-$connexion = mysql_connect("localhost", "root");
-$bdd = mysql_select_db("kiwimoods", $connexion);
-mysql_query("SET NAMES 'utf8'");
+$connexion = mysqli_connect("localhost", "root", "", "kiwimoods");
+$connexion -> query("SET NAMES 'utf8'");
 session_start();
 $userid = $_SESSION['userid'];
 $ok1 = false;
@@ -12,17 +11,14 @@ $ok4 = false;
 $ok5 = false;
 $ok6 = false;
 if (!$connexion) {
-	die('Could not connect: ' . mysql_error());
+	die('Could not connect: ' . mysqli_error());
 }
 
-if (!$bdd) {
-	die ('Impossible de sélectionner la base de données : ' . mysql_error());
-}
 
 $requete = "SELECT titre, artiste FROM music WHERE playlist_id = '".$_SESSION ['playlist_id']."'";
-$res = mysql_query($requete);	
+$res = $connexion -> query($requete);	
 
-while($row = mysql_fetch_array($res)){
+while($row = mysqli_fetch_array($res)){
 	$title_playlist[] = $row['titre'];
 }
 
@@ -39,12 +35,12 @@ if(!empty($_POST['cptitre1'])){
 				$othercontext = $_POST['autrec1'];
 				$context.= $othercontext;
 				$requete = 'INSERT INTO  possiblecontext (context_name, user_id , title) VALUES("'.$context.'","' .$userid.'","'.$title_playlist[0].'")';
-				$res = mysql_query($requete);
+				$res = $connexion -> query($requete);
 				$ok1 = true;
 			}
 		}else{
 			$requete = 'INSERT INTO  possiblecontext (context_name, user_id , title) VALUES("'.$context.'","' .$userid.'","'.$title_playlist[0].'")';
-			$res = mysql_query($requete);
+			$res = $connexion -> query($requete);
 			$ok1 = true;
 		}
 	}
@@ -65,12 +61,12 @@ if(!empty($_POST['cptitre2'])){
 				$othercontext = $_POST['autrec2'];
 				$context.= $othercontext;
 				$requete = 'INSERT INTO  possiblecontext (context_name, user_id , title) VALUES("'.$context.'","' .$userid.'","'.$title_playlist[1].'")';
-				$res = mysql_query($requete);
+				$res = $connexion -> query($requete);
 				$ok2 = true;
 			}
 		}else{
 			$requete = 'INSERT INTO  possiblecontext (context_name, user_id , title) VALUES("'.$context.'","' .$userid.'","'.$title_playlist[1].'")';
-			$res = mysql_query($requete);
+			$res = $connexion -> query($requete);
 			$ok2 = true;
 		}
 	}
@@ -91,12 +87,12 @@ if(!empty($_POST['cptitre3'])){
 				$othercontext = $_POST['autrec3'];
 				$context.= $othercontext;
 				$requete = 'INSERT INTO  possiblecontext (context_name, user_id , title) VALUES("'.$context.'","' .$userid.'","'.$title_playlist[2].'")';
-				$res = mysql_query($requete);
+				$res = $connexion -> query($requete);
 				$ok3 = true;
 			}
 		}else{
 			$requete = 'INSERT INTO  possiblecontext (context_name, user_id , title) VALUES("'.$context.'","' .$userid.'","'.$title_playlist[2].'")';
-			$res = mysql_query($requete);
+			$res = $connexion -> query($requete);
 			$ok3 = true;
 		}
 	}
@@ -117,12 +113,12 @@ if(!empty($_POST['cptitre4'])){
 				$othercontext = $_POST['autrec4'];
 				$context.= $othercontext;
 				$requete = 'INSERT INTO  possiblecontext (context_name, user_id , title) VALUES("'.$context.'","' .$userid.'","'.$title_playlist[3].'")';
-				$res = mysql_query($requete);
+				$res = $connexion -> query($requete);
 				$ok4 = true;
 			}
 		}else{
 			$requete = 'INSERT INTO  possiblecontext (context_name, user_id , title) VALUES("'.$context.'","' .$userid.'","'.$title_playlist[3].'")';
-			$res = mysql_query($requete);
+			$res = $connexion -> query($requete);
 			$ok4 = true;
 		}
 	}
@@ -144,12 +140,12 @@ if(!empty($_POST['cptitre5'])){
 				$othercontext = $_POST['autrec5'];
 				$context.= $othercontext;
 				$requete = 'INSERT INTO  possiblecontext (context_name, user_id , title) VALUES("'.$context.'","' .$userid.'","'.$title_playlist[4].'")';
-				$res = mysql_query($requete);
+				$res = $connexion -> query($requete);
 				$ok5 = true;
 			}
 		}else{
 			$requete = 'INSERT INTO  possiblecontext (context_name, user_id , title) VALUES("'.$context.'","' .$userid.'","'.$title_playlist[4].'")';
-			$res = mysql_query($requete);
+			$res = $connexion -> query($requete);
 			$ok5 = true;
 		}
 	}
@@ -170,12 +166,12 @@ if(!empty($_POST['cptitre6'])){
 				$othercontext = $_POST['autrec6'];
 				$context.= $othercontext;
 				$requete = 'INSERT INTO  possiblecontext (context_name, user_id , title) VALUES("'.$context.'","' .$userid.'","'.$title_playlist[5].'")';
-				$res = mysql_query($requete);
+				$res = $connexion -> query($requete);
 				$ok6 = true;
 			}
 		}else{
 			$requete = 'INSERT INTO  possiblecontext (context_name, user_id , title) VALUES("'.$context.'","' .$userid.'","'.$title_playlist[5].'")';
-			$res = mysql_query($requete);
+			$res = $connexion -> query($requete);
 			$ok6 = true;
 		}
 	}
