@@ -20,6 +20,7 @@ session_start();
 $userid = $_SESSION['userid'];
 
  $listened_playlist = array();
+ /* remettre cette ligne */
 //$requete = "SELECT playlist_id FROM listened WHERE user_id = '".$userid."'";
 $requete = "SELECT playlist_id FROM listened WHERE user_id = 11";
 $res = mysql_query($requete);	
