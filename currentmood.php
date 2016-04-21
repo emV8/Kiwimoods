@@ -41,7 +41,7 @@ if(!empty($_POST['mood'])){
 			$mood.= " : ";
 			$othermood = $_POST['othermood'];
 			$mood.= $othermood;
-			$requete = 'INSERT INTO listenmood (mood_name, user_id) VALUES("'.$mood.'","' .$userid.'")';
+			$requete = 'INSERT INTO currentmood (mood_name, user_id) VALUES("'.$mood.'","' .$userid.'")';
 			$res = mysql_query($requete);
 
 			if (count($listened_playlist)!=6){
@@ -65,7 +65,7 @@ if(!empty($_POST['mood'])){
 			
 		}
 	}else{
-		$requete = 'INSERT INTO listenmood (mood_name, user_id) VALUES("'.$mood.'","' .$userid.'")';
+		$requete = 'INSERT INTO currentmood (mood_name, user_id) VALUES("'.$mood.'","' .$userid.'")';
 		$res = mysql_query($requete);
 		if (count($listened_playlist)!=6){
 				$all_playlist = range(1,6);
