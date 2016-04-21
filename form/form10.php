@@ -37,7 +37,7 @@
 		       <input type = "text" name = "othermoodplaylist" id = "autre" placeholder = "Si autre, écrire une/des humeur(s)" style="text-align:center"/> <br/>
 			<input class = "suivant" type="submit" value="Suivant >" />
 		       <input type="checkbox" name="namemoodplaylist" value="autre" /> Autre : <input type = "text" name = "othermoodplaylist" id = "autre" placeholder = "Autre humeur" style="text-align:center"/> <br/>
-			<input class = "suivant" type="submit" value="Suivant" onclick="loadForm(this)">
+			<input class = "suivant" type="submit" value="Suivant" onclick="self.location.href='tuto2.php'">
 			<br/>
 			<progress max="10" value = "10"></progress>
 		<br/>

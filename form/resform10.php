@@ -40,7 +40,7 @@ if(!empty($_POST['namemoodplaylist'])){
 			}else{
 				echo 'pas dans bdd';
 			}
-			//header("Location:tuto2.php");
+			header("Location:tuto2.php");
 		}
 	}else{
 		$requete = 'INSERT INTO  namemoodplaylist (mood_name, user_id /*, playlist_id */) VALUES("'.$mood.'","' .$userid.'")';
@@ -52,9 +52,8 @@ if(!empty($_POST['namemoodplaylist'])){
 				echo 'dans bdd';
 			}else{
 				echo 'pas dans bdd';
-			}/*
+			}
 			header("Location:tuto2.php");
-			header("Location:tuto2.php");*/
 	}
 }else{
 	echo false;
