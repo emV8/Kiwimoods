@@ -23,8 +23,10 @@
 
 	<div id = "player">
       <?php
+      $connexion = mysqli_connect("localhost", "root", "", "kiwimoods");
+        $connexion -> query("SET NAMES 'utf8'");
         include 'player.php';
-        genplaylist();
+        genplaylist($connexion);
       ?>
   </div>
 </br></br></br></br></br></br></br></br></br></br></br>

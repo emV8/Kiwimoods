@@ -36,22 +36,21 @@
 
 <?php
 
-$connexion = mysql_connect("localhost", "root");
-$bdd = mysql_select_db("kiwimoods", $connexion);
-mysql_query("SET NAMES 'utf8'");
+$connexion = mysqli_connect("localhost", "root", "", "kiwimoods");
+$connexion -> query("SET NAMES 'utf8'");
 $userid = $_SESSION['userid'];
 if (!$connexion) {
-	die('Could not connect: ' . mysql_error());
+	die('Could not connect: ' . mysqli_error());
 }
 if (!$bdd) {
-	die ('Impossible de sélectionner la base de données : ' . mysql_error());
+	die ('Impossible de sélectionner la base de données : ' . mysqli_error());
 }
 
 
 if (isset($_POST['suggestion']) && $_POST['suggestion']!="" && $_POST['suggestion']!='Si vous avez des suggestions, merci de les renseigner ici.'){
 
 	$requete = 'INSERT INTO  suggestion (suggestion_message, user_id) VALUES("'.$_POST['suggestion'].'","' .$userid.'")';
-	$res = mysql_query($requete);
+	$res = $connexion -> query($requete);
 	if ($res){
 		echo "<script> document.getElementById('txt').style.display = 'block'; </script>";
 		echo "<script> document.getElementById('sugg').style.display = 'none'; </script>";

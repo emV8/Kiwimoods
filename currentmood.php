@@ -2,19 +2,18 @@
 
 /*
 include_once('../../config-tut8.php');
-$connexion = mysql_connect($databaselocation, $databaseuser, $databasepass);
+$connexion = mysqli_connect($databaselocation, $databaseuser, $databasepass);
 if (!$connexion) {
-	die('Could not connect: ' . mysql_error());
+	die('Could not connect: ' . mysqli_error());
 }
-$bdd = mysql_select_db($databasename, $connexion);
+$bdd = mysqli_select_db($databasename, $connexion);
 if (!$bdd) {
-	die ('Impossible de sélectionner la base de données : ' . mysql_error());
+	die ('Impossible de sélectionner la base de données : ' . mysqli_error());
 }
-mysql_query("SET NAMES 'utf8'");
+$connexion -> query($requete)("SET NAMES 'utf8'");
 */
-$connexion = mysql_connect("localhost", "root");
-$bdd = mysql_select_db("kiwimoods", $connexion);
-mysql_query("SET NAMES 'utf8'");
+$connexion = mysqli_connect("localhost", "root", "", "kiwimoods");
+$connexion -> query("SET NAMES 'utf8'");
 
 session_start();
 $userid = $_SESSION['userid'];
@@ -23,9 +22,9 @@ $userid = $_SESSION['userid'];
  /* remettre cette ligne */
 //$requete = "SELECT playlist_id FROM listened WHERE user_id = '".$userid."'";
 $requete = "SELECT playlist_id FROM listened WHERE user_id = 11";
-$res = mysql_query($requete);	
+$res = $connexion -> query($requete);	
 
-while($row = mysql_fetch_array($res)){
+while($row = mysqli_fetch_array($res)){
 	$listened_playlist[] = $row['playlist_id'];
 }
 
@@ -42,7 +41,7 @@ if(!empty($_POST['mood'])){
 			$othermood = $_POST['othermood'];
 			$mood.= $othermood;
 			$requete = 'INSERT INTO currentmood (mood_name, user_id) VALUES("'.$mood.'","' .$userid.'")';
-			$res = mysql_query($requete);
+			$res = $connexion -> query($requete);
 
 			if (count($listened_playlist)!=6){
 				$all_playlist = range(1,6);
@@ -66,7 +65,7 @@ if(!empty($_POST['mood'])){
 		}
 	}else{
 		$requete = 'INSERT INTO currentmood (mood_name, user_id) VALUES("'.$mood.'","' .$userid.'")';
-		$res = mysql_query($requete);
+		$res = $connexion -> query($requete);
 		if (count($listened_playlist)!=6){
 				$all_playlist = range(1,6);
 				shuffle($all_playlist);
