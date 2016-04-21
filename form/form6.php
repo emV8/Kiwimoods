@@ -2,6 +2,9 @@
 			<form action="form/resform6.php" method="post" onsubmit="return false">
 			<b> 7. Avant d'écouter cette playlist, vous avez choisi '
 				<?php
+					if (session_status() == PHP_SESSION_NONE || session_id()== ""){
+						session_start();
+					}
 					$connexion = mysql_connect("localhost", "root");
 					$bdd = mysql_select_db("kiwimoods", $connexion);
 					mysql_query("SET NAMES 'utf8'");
