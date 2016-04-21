@@ -19,6 +19,15 @@ mysql_query("SET NAMES 'utf8'");
 session_start();
 $userid = $_SESSION['userid'];
 
+ $listened_playlist = array();
+//$requete = "SELECT playlist_id FROM listened WHERE user_id = '".$userid."'";
+$requete = "SELECT playlist_id FROM listened WHERE user_id = 11";
+$res = mysql_query($requete);	
+
+while($row = mysql_fetch_array($res)){
+	$listened_playlist[] = $row['playlist_id'];
+}
+
 if(!empty($_POST['mood'])){
 	global $dbprefix;
 	$mood = $_POST['mood'];
@@ -40,6 +49,16 @@ if(!empty($_POST['mood'])){
 				header("Location: tuto1.php");
 				exit;
 			}
+			if (count($listened_playlist)!=6){
+				$all_playlist = range(1,6);
+				shuffle($all_playlist);
+				foreach ($all_playlist as $id) {
+					if (!in_array($id, $listened_playlist)){
+						$_SESSION['playlist_id'] = $id;
+						break;
+					}
+				}
+			}
 			
 		}
 	}else{
@@ -51,6 +70,16 @@ if(!empty($_POST['mood'])){
 			}else{
 				header("Location: tuto1.php");
 				exit;
+			}
+			if (count($listened_playlist)!=6){
+				$all_playlist = range(1,6);
+				shuffle($all_playlist);
+				foreach ($all_playlist as $id) {
+					if (!in_array($id, $listened_playlist)){
+						$_SESSION['playlist_id'] = $id;
+						break;
+					}
+				}
 			}
 	}
 }else{
