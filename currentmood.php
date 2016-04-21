@@ -68,10 +68,10 @@ if(!empty($_POST['mood'])){
 		if($_SESSION['tuto1']){	
 				header("Location: tuto2.php");
 				exit;
-			}else{
+		}else{
 				header("Location: tuto1.php");
 				exit;
-			}
+		}
 			if (count($listened_playlist)!=6){
 				$all_playlist = range(1,6);
 				shuffle($all_playlist);

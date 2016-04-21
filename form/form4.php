@@ -42,11 +42,11 @@
    			<tr>
    				<th> </th>
 		       <th> <?php echo $title[0] ?> </th>
-		       <th> <?php echo $title[0] ?> </th>
-		       <th> <?php echo $title[0] ?> </th>
-		       <th> <?php echo $title[0] ?> </th>
-		       <th> <?php echo $title[0] ?> </th>
-		       <th> <?php echo $title[0] ?> </th>
+		       <th> <?php echo $title[1] ?> </th>
+		       <th> <?php echo $title[2] ?> </th>
+		       <th> <?php echo $title[3] ?> </th>
+		       <th> <?php echo $title[4] ?> </th>
+		       <th> <?php echo $title[5] ?> </th>
 		   </tr>
 
 		   <tr>
