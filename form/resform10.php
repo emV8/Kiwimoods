@@ -27,12 +27,25 @@ if(!empty($_POST['namemoodplaylist'])){
 			$othermood = $_POST['othermoodplaylist'];
 			$mood.= $othermood;
 			$requete = 'INSERT INTO  namemoodplaylist (mood_name, user_id , playlist_id) VALUES("'.$mood.'","' .$userid.'", "'.$_SESSION['playlist_id'].'")';
+<<<<<<< HEAD
+			$res = mysql_query($requete);
+
+			$requete2 = 'INSERT INTO  listened (user_id, playlist_id) VALUES("'.$userid.'","' .$_SESSION['playlist_id'].'")';
+			$res2 = mysql_query($requete2);
+			if ($res2){
+				echo 'dans bdd';
+			}else{
+				echo 'pas dans bdd';
+			}
+			header("Location:tuto2.php");
+=======
 			$res = $connexion -> query($requete);
                                                                                                                            
 		}
 	}else{
 		$requete = 'INSERT INTO  namemoodplaylist (mood_name, user_id , playlist_id) VALUES("'.$mood.'","' .$userid.'", "'.$_SESSION['playlist_id'].'")';
 		$res = $connexion -> query($requete);
+>>>>>>> origin/master
 	}
 }else{
 	echo false;
