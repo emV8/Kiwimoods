@@ -37,7 +37,7 @@
             À la fin de cette playlist, vous passerez au questionnaire. <br/>
             Ce dernier est composé de 11 questions et chacune est obligatoire. <br/>
             N'hésitez pas à remplir le champ <i> "autre" </i> si aucune des formulations ne vous convient. <br/>
-            Merci de répondre le plus sincèrement possible à ces questions et de quitter la page, si vous le souhaitez, après avoir répondu à toutes les questions. <br/> <br/>
+            Merci de répondre le plus honnêtement possible à ces questions et de quitter la page, si vous le souhaitez, après avoir répondu à toutes les questions. <br/> <br/>
             Bon courage pour le questionnaire !
             <br/>
             <br/>

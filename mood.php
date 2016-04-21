@@ -19,7 +19,7 @@
 </header>
 
 <div class="text">
-	Comment qualifieriez-vous votre humeur au cours de la journée ?
+	Comment qualifieriez-vous votre humeur au cours des dernières heures ?
 </div>
 <div id = "currentMood">
 	<form action="currentmood.php" method="post">

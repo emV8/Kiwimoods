@@ -16,7 +16,7 @@
 
             }
 ?>
-			<form action="form/resform1.php" method="post" onsubmit="return false">
+			<form id = "premier" action="form/resform1.php" method="post" onsubmit="return false">
 			<b> 1. Pour chacun des titres écoutés, quelle(s) émotion(s)
 			 avez-vous ressentie(s) ?
 			 	<a href="#" class="test">[?]

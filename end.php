@@ -42,9 +42,6 @@ $userid = $_SESSION['userid'];
 if (!$connexion) {
 	die('Could not connect: ' . mysqli_error());
 }
-if (!$bdd) {
-	die ('Impossible de sélectionner la base de données : ' . mysqli_error());
-}
 
 
 if (isset($_POST['suggestion']) && $_POST['suggestion']!="" && $_POST['suggestion']!='Si vous avez des suggestions, merci de les renseigner ici.'){

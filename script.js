@@ -1,5 +1,15 @@
 $(document).ready(function() {
     //loadForm(1);
+    $('body').on('click', '#last', function(e){
+        e.preventDefault;
+        window.location.href = "tmp.php";
+        /* test 
+        permettrait de passer au form10 qui n'est pas affiché mais continue la fonction loadForm et donc
+        retourne à la question 1
+        $("#q").load("form/form10.php");
+        return;
+        */
+    })
 });
 
 
@@ -24,7 +34,12 @@ function loadForm(elem) {
                 }
                
             }
-            
+/*
+            if($("#dernier").length==1){
+            //alert($(this).attr('id'));
+            window.location.href = "tuto2.php";
+        }
+        */
             
         }
       });
