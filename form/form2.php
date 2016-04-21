@@ -1,11 +1,12 @@
+
 <?php
-	$connexion = mysql_connect("localhost", "root");
-	$bdd = mysql_select_db("kiwimoods", $connexion);
-	mysql_query("SET NAMES 'utf8'");
+  $connexion = mysql_connect("localhost", "root");
+  $bdd = mysql_select_db("kiwimoods", $connexion);
+  mysql_query("SET NAMES 'utf8'");
 
-	session_start();	
+  session_start();  
 
-	$title = array();
+  $title = array();
             $artist = array();
             $link = array();
             $requete = "SELECT titre, artiste, lien FROM music WHERE playlist_id = '".$_SESSION['playlist_id']."'";
