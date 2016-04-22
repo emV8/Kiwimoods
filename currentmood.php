@@ -43,7 +43,7 @@ if(!empty($_POST['mood'])){
 			$requete = 'INSERT INTO currentmood (mood_name, user_id) VALUES("'.$mood.'","' .$userid.'")';
 			$res = $connexion -> query($requete);
 
-			if (count($listened_playlist)!=6){
+			if (count($listened_playlist)<6){
 				$all_playlist = range(1,6);
 				shuffle($all_playlist);
 				foreach ($all_playlist as $id) {
@@ -52,7 +52,18 @@ if(!empty($_POST['mood'])){
 						break;
 					}
 				}
-			}
+			}/*else{
+				header("Location:end.php");
+				exit;
+			}*/
+
+		$requete = 'INSERT INTO currentmood (mood_name, user_id, playlist_id) VALUES("'.$mood.'","' .$userid.'","'.$id.'")';
+		$res = $connexion -> query($requete);
+
+		if (count($listened_playlist)>=6){
+			header("Location:end.php");
+				exit;
+		}
 
 			if($_SESSION['tuto1']){	
 				header("Location: tuto2.php");
@@ -64,9 +75,8 @@ if(!empty($_POST['mood'])){
 			
 		}
 	}else{
-		$requete = 'INSERT INTO currentmood (mood_name, user_id) VALUES("'.$mood.'","' .$userid.'")';
-		$res = $connexion -> query($requete);
-		if (count($listened_playlist)!=6){
+		
+		if (count($listened_playlist)<6){
 				$all_playlist = range(1,6);
 				shuffle($all_playlist);
 				foreach ($all_playlist as $id) {
@@ -75,7 +85,18 @@ if(!empty($_POST['mood'])){
 						break;
 					}
 				}
-			}
+			}/*else{
+				header("Location:end.php");
+				exit;
+			}*/
+
+		$requete = 'INSERT INTO currentmood (mood_name, user_id, playlist_id) VALUES("'.$mood.'","' .$userid.'","'.$id.'")';
+		$res = $connexion -> query($requete);
+
+		if (count($listened_playlist)>=6){
+			header("Location:end.php");
+				exit;
+		}
 			
 		if($_SESSION['tuto1']){	
 				header("Location: tuto2.php");
