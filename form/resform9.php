@@ -20,21 +20,23 @@ if(!empty($_POST['possiblecontextplaylist'])){
 	foreach($_POST['possiblecontextplaylist'] as $selected){
 		$context = $selected;
 		if ($selected=="autrec"){
-			if (empty($_POST['autrec']) && $_POST['autrec']==""){
+			if (empty($_POST['autrec1']) && $_POST['autrec1']==""){
 				echo "<script> alert('Merci de remplir le champ \'Autre\'') </script>";
 				echo "<script> location.href = history.back(-1) </script>";
 			}else{
 				$context.= " : ";
-				$othercontext = $_POST['autrec'];
+				$othercontext = $_POST['autrec1'];
 				$context.= $othercontext;
 				$requete = 'INSERT INTO possiblecontextplaylist (context_name, user_id , playlist_id) VALUES("'.$context.'","' .$userid.'", "'.$_SESSION['playlist_id'].'")';
 				$res = $connexion -> query($requete);
-				header("Location:form10.php")
+				header("Location:form10.php");
+				exit;
 			}
 		}else{
 			$requete = 'INSERT INTO possiblecontextplaylist (context_name, user_id , playlist_id) VALUES("'.$context.'","' .$userid.'", "'.$_SESSION['playlist_id'].'")';
 			$res = $connexion -> query($requete);
-			header("Location:form10.php")
+			header("Location:form10.php");
+			exit;
 		}
 	}
 }else{
