@@ -39,9 +39,13 @@
 		       <input type="checkbox" name="namemoodplaylist" value="autre" /> Autre : <input type = "text" name = "othermoodplaylist" id = "autre" placeholder = "Autre humeur" style="text-align:center"/> <br/>
 			<input id = "last" class = "suivant" type="submit" value="Suivant" onclick="loadForm(this)">
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 			<!--<input class = "suivant" type="submit" value="Suivant" onclick="self.location.href='tuto2.php'">-->
 
+=======
+			//<input class = "suivant" type="submit" value="Suivant" onclick="self.location.href='tuto2.php'">
+>>>>>>> parent of b13cf3a... commit imposé
 =======
 			//<input class = "suivant" type="submit" value="Suivant" onclick="self.location.href='tuto2.php'">
 >>>>>>> parent of b13cf3a... commit imposé
