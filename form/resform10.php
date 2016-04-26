@@ -19,15 +19,12 @@ if(!empty($_POST['namemoodplaylist'])){
 	$mood = $_POST['namemoodplaylist'];
 	if ($mood=="autre"){
 		if (empty($_POST['othermoodplaylist']) && $_POST['othermoodplaylist']==""){
-			require("form10.php");
-			echo "<script> alert('Merci de remplir le champ \'Autre\'') </script>";
-			echo "<script> location.href = history.back(-1) </script>";
+			echo false;
 		}else{
 			$mood.= " : ";
 			$othermood = $_POST['othermoodplaylist'];
 			$mood.= $othermood;
 			$requete = 'INSERT INTO  namemoodplaylist (mood_name, user_id , playlist_id) VALUES("'.$mood.'","' .$userid.'", "'.$_SESSION['playlist_id'].'")';
-<<<<<<< HEAD
 			$res = mysql_query($requete);
 
 			$requete2 = 'INSERT INTO  listened (user_id, playlist_id) VALUES("'.$userid.'","' .$_SESSION['playlist_id'].'")';
@@ -38,14 +35,12 @@ if(!empty($_POST['namemoodplaylist'])){
 				echo 'pas dans bdd';
 			}
 			header("Location:tuto2.php");
-=======
 			$res = $connexion -> query($requete);
                                                                                                                            
 		}
 	}else{
 		$requete = 'INSERT INTO  namemoodplaylist (mood_name, user_id , playlist_id) VALUES("'.$mood.'","' .$userid.'", "'.$_SESSION['playlist_id'].'")';
 		$res = $connexion -> query($requete);
->>>>>>> origin/master
 	}
 }else{
 	echo false;

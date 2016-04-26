@@ -28,8 +28,7 @@ if(!empty($_POST['cptitre1'])){
 		$context = $selected;
 		if ($selected=="autrec"){
 			if (empty($_POST['autrec1']) && $_POST['autrec1']==""){
-				echo "<script> alert('Merci de remplir le champ \'Autre\'') </script>";
-				echo "<script> location.href = history.back(-1) </script>";
+				echo false;
 			}else{
 				$context.= " : ";
 				$othercontext = $_POST['autrec1'];
@@ -54,8 +53,7 @@ if(!empty($_POST['cptitre2'])){
 		$context = $selected;
 		if ($selected=="autrec"){
 			if (empty($_POST['autrec1']) && $_POST['autrec2']==""){
-				echo "<script> alert('Merci de remplir le champ \'Autre\'') </script>";
-				echo "<script> location.href = history.back(-1) </script>";
+				echo false;
 			}else{
 				$context.= " : ";
 				$othercontext = $_POST['autrec2'];

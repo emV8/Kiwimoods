@@ -30,8 +30,7 @@ if(!empty($_POST['etitre1'])){
 		$context = $selected;
 		if ($selected=="autre"){
 			if (empty($_POST['autre1']) && $_POST['autre1']==""){
-				echo "<script> alert('Merci de remplir le champ \'Autre\'') </script>";
-				echo "<script> location.href = history.back(-1) </script>";
+				echo false;
 			}else{
 				$context.= " : ";
 				$othercontext = $_POST['autre1'];
@@ -56,8 +55,7 @@ if(!empty($_POST['etitre2'])){
 		$context = $selected;
 		if ($selected=="autre"){
 			if (empty($_POST['autre1']) && $_POST['autre2']==""){
-				echo "<script> alert('Merci de remplir le champ \'Autre\'') </script>";
-				echo "<script> location.href = history.back(-1) </script>";
+				echo false;
 			}else{
 				$context.= " : ";
 				$othercontext = $_POST['autre2'];
@@ -82,8 +80,7 @@ if(!empty($_POST['etitre3'])){
 		$context = $selected;
 		if ($selected=="autre"){
 			if (empty($_POST['autre3']) && $_POST['autre3']==""){
-				echo "<script> alert('Merci de remplir le champ \'Autre\'') </script>";
-				echo "<script> location.href = history.back(-1) </script>";
+				echo false;
 			}else{
 				$context.= " : ";
 				$othercontext = $_POST['autre3'];
@@ -108,8 +105,7 @@ if(!empty($_POST['etitre4'])){
 		$context = $selected;
 		if ($selected=="autre"){
 			if (empty($_POST['autre4']) && $_POST['autre4']==""){
-				echo "<script> alert('Merci de remplir le champ \'Autre\'') </script>";
-				echo "<script> location.href = history.back(-1) </script>";
+				echo false;
 			}else{
 				$context.= " : ";
 				$othercontext = $_POST['autre4'];
@@ -135,8 +131,7 @@ if(!empty($_POST['etitre5'])){
 		$context = $selected;
 		if ($selected=="autre"){
 			if (empty($_POST['autre5']) && $_POST['autre5']==""){
-				echo "<script> alert('Merci de remplir le champ \'Autre\'') </script>";
-				echo "<script> location.href = history.back(-1) </script>";
+				echo false;
 			}else{
 				$context.= " : ";
 				$othercontext = $_POST['autre5'];
@@ -161,8 +156,7 @@ if(!empty($_POST['etitre6'])){
 		$context = $selected;
 		if ($selected=="autre"){
 			if (empty($_POST['autre6']) && $_POST['autre6']==""){
-				echo "<script> alert('Merci de remplir le champ \'Autre\'') </script>";
-				echo "<script> location.href = history.back(-1) </script>";
+				echo false;
 			}else{
 				$context.= " : ";
 				$othercontext = $_POST['autre6'];

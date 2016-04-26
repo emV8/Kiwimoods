@@ -33,9 +33,9 @@
 		       <input type="radio" name="newmoodplaylist" value="fatigue" /> Fatigue <br/>
 		       <input type="radio" name="newmoodplaylist" value="ennui" /> Ennui <br/>
 		       <input type="radio" name="newmoodplaylist" value="tristesse" /> Tristesse <br/>
-		       <input type="radio" name="newmoodplaylist" value="autre" /> Autre
+		       <input type="radio" name="newmoodplaylist" value="autre" id = "newmoodplaylist" /> Autre
 		        <br/>
-		       <input type = "text" name = "othermoodplaylist" id = "autre" placeholder = "Si autre, écrire une humeur" style="text-align:center"/> <br/>
+		       <input type = "text" name = "othermoodplaylist" id = "autre" placeholder = "Si autre, écrire une humeur" style="text-align:center" onfocus="document.getElementById('newmoodplaylist').checked=true;"/> <br/>
 			<input class = "suivant" type="submit" value="Suivant" onclick="loadForm(this)">
 			<br/>
 			<progress max="10" value = "7"></progress>

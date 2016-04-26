@@ -128,25 +128,25 @@
 		   </tr>
 		    <tr>
 		       <td style="text-align:left">Autre</td>
-		       <td><br/><input type="checkbox" name="etitre1[]" value="autre" />
+		       <td><br/><input type="checkbox" name="etitre1[]" id = "etitre1" value="autre" />
 		       <br/>
-		       <input type = "text" name = "autre1" id = "autre1" placeholder = "Si autre, écrire une/des émotion(s)" style="text-align:center"/>
+		       <input type = "text" name = "autre1" id = "autre1" placeholder = "Si autre, écrire une/des émotion(s)" style="text-align:center" onfocus="document.getElementById('etitre1').checked=true;"/>
 		   </td>
-		       <td><br/><input type="checkbox" name="etitre2[]" value="autre" />
+		       <td><br/><input type="checkbox" name="etitre2[]" id = "etitre2" value="autre" />
 		       <br/>
-		       <input type = "text" name = "autre2" id = "autre2" placeholder = "Si autre, écrire une/des émotion(s)" style="text-align:center"/></td>
-		       <td><br/><input type="checkbox" name="etitre3[]" value="autre"/>
+		       <input type = "text" name = "autre2" id = "autre2" placeholder = "Si autre, écrire une/des émotion(s)" style="text-align:center" onfocus="document.getElementById('etitre2').checked=true;"/></td>
+		       <td><br/><input type="checkbox" name="etitre3[]" id = "etitre3" value="autre"/>
 		       <br/>
-		       <input type = "text" name = "autre3" id = "autre3" placeholder = "Si autre, écrire une/des émotion(s)" style="text-align:center"/></td>
-		       <td><br/><input type="checkbox" name="etitre4[]" value="autre" />
+		       <input type = "text" name = "autre3" id = "autre3" placeholder = "Si autre, écrire une/des émotion(s)" style="text-align:center" onfocus="document.getElementById('etitre3').checked=true;"/></td>
+		       <td><br/><input type="checkbox" name="etitre4[]" id = "etitre4" value="autre" />
 		       <br/>
-		       <input type = "text" name = "autre4" id = "autre4" placeholder = "Si autre, écrire une/des émotion(s)" style="text-align:center"/></td>
-		       <td><br/><input type="checkbox" name="etitre5[]" value="autre" />
+		       <input type = "text" name = "autre4" id = "autre4" placeholder = "Si autre, écrire une/des émotion(s)" style="text-align:center" onfocus="document.getElementById('etitre4').checked=true;"/></td>
+		       <td><br/><input type="checkbox" name="etitre5[]" id = "etitre5" value="autre" />
 		       <br/>
-		       <input type = "text" name = "autre5" id = "autre5" placeholder = "Si autre, écrire une/des émotion(s)" style="text-align:center"/></td>
-		       <td><br/><input type="checkbox" name="etitre6[]" value="autre"/>
+		       <input type = "text" name = "autre5" id = "autre5" placeholder = "Si autre, écrire une/des émotion(s)" style="text-align:center" onfocus="document.getElementById('etitre5').checked=true;"/></td>
+		       <td><br/><input type="checkbox" name="etitre6[]" id = "etitre6" value="autre"/>
 		       <br/>
-		       <input type = "text" name = "autre6" id = "autre6" placeholder = "Si autre, écrire une/des émotion(s)" style="text-align:center"/></td>
+		       <input type = "text" name = "autre6" id = "autre6" placeholder = "Si autre, écrire une/des émotion(s)" style="text-align:center" onfocus="document.getElementById('etitre6').checked=true;"/></td>
 		   </tr>
 			</table>
 			<br/>

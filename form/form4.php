@@ -168,25 +168,25 @@
 		   </tr>
 		   <tr>
 		       <td style="text-align:left">Autre</td>
-		       <td><br/><input type="checkbox" name="cptitre1[]" value="autrec" />
+		       <td><br/><input type="checkbox" name="cptitre1[]" id ="cptitre1" value="autrec" />
 		       <br/>
-		       <input type = "text" name = "autrec1" id = "autrec1" placeholder = "Si autre, écrire un/des contexte(s)" style="text-align:center"/>
+		       <input type = "text" name = "autrec1" id = "autrec1" placeholder = "Si autre, écrire un/des contexte(s)" style="text-align:center" onfocus="document.getElementById('cptitre1').checked=true;"/>
 		   </td>
-		       <td><br/><input type="checkbox" name="cptitre2[]" value="autrec" />
+		       <td><br/><input type="checkbox" name="cptitre2[]" id ="cptitre2" value="autrec" />
 		       <br/>
-		       <input type = "text" name = "autrec2" id = "autrec2" placeholder = "Si autre, écrire un/des contexte(s)" style="text-align:center"/></td>
-		       <td><br/><input type="checkbox" name="cptitre3[]" value="autrec"/>
+		       <input type = "text" name = "autrec2" id = "autrec2" placeholder = "Si autre, écrire un/des contexte(s)" style="text-align:center" onfocus="document.getElementById('cptitre2').checked=true;"/></td>
+		       <td><br/><input type="checkbox" name="cptitre3[]" id ="cptitre3" value="autrec"/>
 		       <br/>
-		       <input type = "text" name = "autrec3" id = "autrec3" placeholder = "Si autre, écrire un/des contexte(s)" style="text-align:center"/></td>
-		       <td><br/><input type="checkbox" name="cptitre4[]" value="autrec" />
+		       <input type = "text" name = "autrec3" id = "autrec3" placeholder = "Si autre, écrire un/des contexte(s)" style="text-align:center" onfocus="document.getElementById('cptitre3').checked=true;"/></td>
+		       <td><br/><input type="checkbox" name="cptitre4[]" id ="cptitre4" value="autrec" />
 		       <br/>
-		       <input type = "text" name = "autrec4" id = "autrec4" placeholder = "Si autre, écrire un/des contexte(s)" style="text-align:center"/></td>
-		       <td><br/><input type="checkbox" name="cptitre5[]" value="autrec" />
+		       <input type = "text" name = "autrec4" id = "autrec4" placeholder = "Si autre, écrire un/des contexte(s)" style="text-align:center"/ onfocus="document.getElementById('cptitre4').checked=true;"></td>
+		       <td><br/><input type="checkbox" name="cptitre5[]" id ="cptitre5" value="autrec" />
 		       <br/>
-		       <input type = "text" name = "autrec5" id = "autrec5" placeholder = "Si autre, écrire un/des contexte(s)" style="text-align:center"/></td>
-		       <td><br/><input type="checkbox" name="cptitre6[]" value="autrec"/>
+		       <input type = "text" name = "autrec5" id = "autrec5" placeholder = "Si autre, écrire un/des contexte(s)" style="text-align:center" onfocus="document.getElementById('cptitre5').checked=true;"/></td>
+		       <td><br/><input type="checkbox" name="cptitre6[]" id ="cptitre6" value="autrec"/>
 		       <br/>
-		       <input type = "text" name = "autrec6" id = "autrec6" placeholder = "Si autre, écrire un/des contexte(s)" style="text-align:center"/></td>
+		       <input type = "text" name = "autrec6" id = "autrec6" placeholder = "Si autre, écrire un/des contexte(s)" style="text-align:center" onfocus="document.getElementById('cptitre1').checked=true;"/></td>
 		   </tr>
 			</table>
 			<br/>

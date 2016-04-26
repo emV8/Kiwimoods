@@ -75,7 +75,7 @@
 				$_SESSION['userid'] = $userid;
 				$_SESSION['tuto1'] = false;
 				$_SESSION['tuto2'] = false;
-				header('Location: tuto.php');    
+				header('Location: mood.php');    
 			}else{
 				require("index.html");
 				echo "<script> alert('Une erreur est survenue, merci de recommencer.') </script>";

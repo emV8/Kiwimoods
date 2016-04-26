@@ -20,8 +20,8 @@ $userid = $_SESSION['userid'];
 
  $listened_playlist = array();
  /* remettre cette ligne */
-//$requete = "SELECT playlist_id FROM listened WHERE user_id = '".$userid."'";
-$requete = "SELECT playlist_id FROM listened WHERE user_id = 11";
+$requete = "SELECT playlist_id FROM listened WHERE user_id = '".$userid."'";
+//$requete = "SELECT playlist_id FROM listened WHERE user_id = 11";
 $res = $connexion -> query($requete);	
 
 while($row = mysqli_fetch_array($res)){
@@ -52,10 +52,10 @@ if(!empty($_POST['mood'])){
 						break;
 					}
 				}
-			}/*else{
+			}else{
 				header("Location:end.php");
 				exit;
-			}*/
+			}
 
 		$requete = 'INSERT INTO currentmood (mood_name, user_id, playlist_id) VALUES("'.$mood.'","' .$userid.'","'.$id.'")';
 		$res = $connexion -> query($requete);
@@ -85,10 +85,10 @@ if(!empty($_POST['mood'])){
 						break;
 					}
 				}
-			}/*else{
+			}else{
 				header("Location:end.php");
 				exit;
-			}*/
+			}
 
 		$requete = 'INSERT INTO currentmood (mood_name, user_id, playlist_id) VALUES("'.$mood.'","' .$userid.'","'.$id.'")';
 		$res = $connexion -> query($requete);

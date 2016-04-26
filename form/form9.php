@@ -34,8 +34,8 @@
 			<input type="checkbox" name="possiblecontextplaylist[]" value="amis" /> Avec des amis<br/>
 			<input type="checkbox" name="possiblecontextplaylist[]" value="compagnon" /> Avec son compagnon/sa compagne<br/>
 			<input type="checkbox" name="possiblecontextplaylist[]" value="famille" /> Avec sa famille<br/>
-			<input type="checkbox" name="possiblecontextplaylist[]" value="autrec" /> Autre :
-			<input type = "text" name = "autrec1" id = "autrec1" placeholder = "Si autre, écrire un/des contexte(s)" style="text-align:center"/>
+			<input type="checkbox" name="possiblecontextplaylist[]" id ="possiblecontextplaylist" value="autrec" /> Autre :
+			<input type = "text" name = "autrec1" id = "autrec1" placeholder = "Si autre, écrire un/des contexte(s)" style="text-align:center" onfocus="document.getElementById('possiblecontextplaylist').checked=true;"/>
 			<br/>
 			<br/>
 			<div>

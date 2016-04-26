@@ -28,7 +28,6 @@
         genplaylist($connexion);
       ?>
   </div>
-</br></br></br></br></br></br></br></br></br></br></br>
     <div class = "question" id = "q">
       <?php
         include 'form/form1.php';
